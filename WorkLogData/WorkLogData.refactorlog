@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Operations Version="1.0" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
+  <Operation Name="Rename Refactor" Key="9aa47f0e-4444-49bc-9bcc-d8be3fee4ad3" ChangeDateTime="08/26/2019 09:37:58">
+    <Property Name="ElementName" Value="[dbo].[Instrument].[Manufacturer]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Instrument]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="ManufacturerId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="25cdcc13-cf6d-45af-a61a-46cfd4a90fd4" ChangeDateTime="08/26/2019 09:38:17">
+    <Property Name="ElementName" Value="[dbo].[Instrument].[Cl]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Instrument]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="ClassificationId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="52f1dc75-25c9-4e1a-999a-f9ca0f8e725f" ChangeDateTime="08/26/2019 09:50:23">
+    <Property Name="ElementName" Value="[dbo].[ErrorMessage_Instrument].[InstrumentID]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[ErrorMessage_Instrument]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="InstrumentId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="aaea5172-fb0e-408f-be85-8cc0401952ca" ChangeDateTime="08/26/2019 09:50:26">
+    <Property Name="ElementName" Value="[dbo].[ErrorMessage_Instrument].[ErrorMessageID]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[ErrorMessage_Instrument]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="ErrorMessageId" />
+  </Operation>
+</Operations>

@@ -1,0 +1,206 @@
+﻿<UserControl x:Class="WorkLog.UserControlIssue"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:WorkLog"
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Border BorderBrush="Black" BorderThickness="2">
+        <StackPanel>
+            <Grid >
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width=".75*"/>
+
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+
+                </Grid.RowDefinitions>
+
+                <!--Customer-->
+                <Grid Grid.Row="0" Grid.Column="0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="3.5*"/>
+                        <ColumnDefinition Width="6*"/>
+
+                    </Grid.ColumnDefinitions>
+                    <TextBlock Text="Customer" FontWeight="Medium" Margin="10"/>
+                    <TextBox Grid.Column="1" HorizontalAlignment="Stretch" Margin="10"/>
+                </Grid>
+
+                <!--Date-->
+                <Grid Grid.Row="0" Grid.Column="1">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="0.6*"/>
+                        <ColumnDefinition Width="*"/>
+
+                    </Grid.ColumnDefinitions>
+                    <TextBlock Text="Date" FontWeight="Medium" Margin="10"/>
+                    <DatePicker Grid.Column="1"  HorizontalAlignment="Stretch" Margin="10"/>
+                </Grid>
+            </Grid>
+            <Grid >
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width=".75*"/>
+
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+
+                </Grid.RowDefinitions>
+                <!--Analyzer-->
+                <Grid Grid.Row="0" Grid.Column="0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="3.5*"/>
+                        <ColumnDefinition Width="6*"/>
+
+                    </Grid.ColumnDefinitions>
+                    <TextBlock Text="Analyzer" FontWeight="Medium" Margin="10"/>
+                    <TextBox Grid.Column="1" HorizontalAlignment="Stretch" Margin="10"/>
+                </Grid>
+
+                <!--Serial Number-->
+                <Grid Grid.Row="0" Grid.Column="1">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="0.6*"/>
+                        <ColumnDefinition Width="*"/>
+
+                    </Grid.ColumnDefinitions>
+                    <TextBlock Text="Serial#" FontWeight="Medium" Margin="10"/>
+                    <TextBox Grid.Column="1" HorizontalAlignment="Stretch" Margin="10"/>
+                </Grid>
+            </Grid>
+            <!--Error-->
+            <TextBlock Text="Error Message(s)/Code(s)" FontWeight="Medium" Margin="10 10 0 0"/>
+            <TextBox x:Name="ErrorText" Padding="2" Margin="10 0 10 0"/>
+            <!--Complaint-->
+            <TextBlock Text="Complaint(s)/Issue(s)" FontWeight="Medium" Margin="10 10 0 0"/>
+            <TextBox x:Name="IssueText" Padding="2" Margin="10 0 10 0"/>
+            <!--Resolved-->
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="2*"/>
+                    <ColumnDefinition Width="9*"/>
+
+                </Grid.ColumnDefinitions>
+
+                <TextBlock Text="Resolved" Grid.Column="0" FontWeight="Medium" Margin="10"/>
+                <ToggleButton x:Name="Resolved" Grid.Column="1" HorizontalAlignment="Left" Margin="10" />
+            </Grid>
+            <!--Save-->
+            <Button x:Name="Save" Content=" Save " Margin="0 10 0 0"   HorizontalAlignment="Center"/>
+            <UserControl 
+                d:DesignHeight="450" d:DesignWidth="800" Margin="0,0,-4,0">
+                <Border BorderBrush="Black" BorderThickness="2">
+                    <StackPanel>
+                        <Grid >
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width=".75*"/>
+
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="*"/>
+
+                            </Grid.RowDefinitions>
+
+                            <!--Customer-->
+                            <Grid Grid.Row="0" Grid.Column="0">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="3.5*"/>
+                                    <ColumnDefinition Width="6*"/>
+
+                                </Grid.ColumnDefinitions>
+                                <TextBlock Text="Customer" FontWeight="Medium" Margin="10"/>
+                                <TextBox Grid.Column="1" HorizontalAlignment="Stretch" Margin="10"/>
+                            </Grid>
+
+                            <!--Date-->
+                            <Grid Grid.Row="0" Grid.Column="1">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="0.6*"/>
+                                    <ColumnDefinition Width="*"/>
+
+                                </Grid.ColumnDefinitions>
+                                <TextBlock Text="Date" FontWeight="Medium" Margin="10"/>
+                                <DatePicker Grid.Column="1"  HorizontalAlignment="Stretch" Margin="10"/>
+                            </Grid>
+                        </Grid>
+                        <Grid >
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width=".75*"/>
+
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="*"/>
+
+                            </Grid.RowDefinitions>
+                            <!--Analyzer-->
+                            <Grid Grid.Row="0" Grid.Column="0">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="3.5*"/>
+                                    <ColumnDefinition Width="6*"/>
+
+                                </Grid.ColumnDefinitions>
+                                <TextBlock Text="Analyzer" FontWeight="Medium" Margin="10"/>
+                                <TextBox Grid.Column="1" HorizontalAlignment="Stretch" Margin="10"/>
+                            </Grid>
+
+                            <!--Serial Number-->
+                            <Grid Grid.Row="0" Grid.Column="1">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="0.6*"/>
+                                    <ColumnDefinition Width="*"/>
+
+                                </Grid.ColumnDefinitions>
+                                <TextBlock Text="Serial#" FontWeight="Medium" Margin="10"/>
+                                <TextBox Grid.Column="1" HorizontalAlignment="Stretch" Margin="10"/>
+                            </Grid>
+                        </Grid>
+                        <!--Error-->
+                        <TextBlock Text="Error Message(s)/Code(s)" FontWeight="Medium" Margin="10 10 0 0"/>
+                        <TextBox x:Name="ErrorText1" Padding="2" Margin="10 0 10 0"/>
+                        <!--Complaint-->
+                        <TextBlock Text="Complaint(s)/Issue(s)" FontWeight="Medium" Margin="10 10 0 0"/>
+                        <TextBox x:Name="IssueText1" Padding="2" Margin="10 0 10 0"/>
+                        <!--Resolved-->
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="2*"/>
+                                <ColumnDefinition Width="9*"/>
+
+                            </Grid.ColumnDefinitions>
+
+                            <TextBlock Text="Resolved" Grid.Column="0" FontWeight="Medium" Margin="10"/>
+                            <ToggleButton x:Name="Resolved1" Grid.Column="1" HorizontalAlignment="Left" Margin="10" />
+                        </Grid>
+                        <!--Save-->
+                        <Button x:Name="Save1" Content=" Save " Margin="0 10 0 0"   HorizontalAlignment="Center"/>
+
+                    </StackPanel>
+                </Border>
+
+            </UserControl>
+
+        </StackPanel>
+    </Border>
+
+</UserControl>
+
