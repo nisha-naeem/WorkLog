@@ -1,5 +1,7 @@
 ﻿using Demo.ViewModels;
+using Microsoft.Reporting.WinForms;
 using System;
+using System.Collections.Generic;
 using System.Windows.Forms;
 using WorkLogIcons;
 
@@ -116,5 +118,32 @@ namespace Demo.Views
         {
             _viewModel.Search();
         }
+
+        private void buttonViewReport_Click(object sender, EventArgs e)
+        {
+            // _viewModel.PrepReportData();
+            List<ReportParameter> parameters = new List<ReportParameter>();
+            parameters.Add(new ReportParameter ("Servicenumber",_viewModel.SelectedIssueNumber));
+            parameters.Add(new ReportParameter("CustomerName", _viewModel.SelectedCustomerName));
+            parameters.Add(new ReportParameter("Customer", _viewModel.SelectedCustomerName));
+            parameters.Add(new ReportParameter("Location", "TLA static"));
+            parameters.Add(new ReportParameter("EquipmentName", "Hematology Analyser Static"));
+            parameters.Add(new ReportParameter("Model", _viewModel.SelectedAnalyser));
+            parameters.Add(new ReportParameter("SerialNumber", _viewModel.SelectedSerial));
+            parameters.Add(new ReportParameter("Manufacturer", "Abbott Static"));
+            parameters.Add(new ReportParameter("CountryOfOrigin", "USA static"));
+            parameters.Add(new ReportParameter("ServiceDate", "02/02/20"));
+            parameters.Add(new ReportParameter("ServiceType", "Breakdown"));
+            parameters.Add(new ReportParameter("ComplaintFaults", "Breakdown"));
+            parameters.Add(new ReportParameter("WorkDonePartsReplaced", "Breakdown"));
+            parameters.Add(new ReportParameter("Remarks", "Breakdown"));
+            parameters.Add(new ReportParameter("EmployeeName", "Breakdown"));
+            parameters.Add(new ReportParameter("EmployeeDesignation", "Breakdown"));
+
+
+            ReportView reportView = new ReportView(parameters) { MdiParent =  this.MdiParent};
+            reportView.Show();
+        }
+        
     }
 }

@@ -18,7 +18,7 @@ namespace Demo
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new ReportView());
+            Application.Run(new WorkLogUIView());
         }
     }
 }

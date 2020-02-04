@@ -391,9 +391,5 @@ namespace Demo.ViewModels
             Open
         }
 
-
-
-
-
     }
 }

@@ -50,7 +50,6 @@
                     <Value>REPORT #</Value>
                     <Style>
                       <FontFamily>Calibri</FontFamily>
-                      <FontSize>11pt</FontSize>
                       <FontWeight>Bold</FontWeight>
                     </Style>
                   </TextRun>
@@ -58,10 +57,10 @@
                 <Style />
               </Paragraph>
             </Paragraphs>
-            <Top>0.60938in</Top>
-            <Left>0.72222in</Left>
-            <Height>0.25in</Height>
-            <Width>0.68626in</Width>
+            <Top>0.48646in</Top>
+            <Left>0.73611in</Left>
+            <Height>0.1875in</Height>
+            <Width>0.67237in</Width>
             <ZIndex>1</ZIndex>
             <Style>
               <Border>
@@ -90,9 +89,41 @@
                   </Paragraph>
                 </Paragraphs>
                 <rd:DefaultName>CustomerName</rd:DefaultName>
-                <Left>0.97792in</Left>
+                <Left>0.97796in</Left>
                 <Height>0.25in</Height>
-                <Width>5.51166in</Width>
+                <Width>5.5311in</Width>
+                <Style>
+                  <Border>
+                    <Style>None</Style>
+                  </Border>
+                  <PaddingLeft>2pt</PaddingLeft>
+                  <PaddingRight>2pt</PaddingRight>
+                  <PaddingTop>2pt</PaddingTop>
+                  <PaddingBottom>2pt</PaddingBottom>
+                </Style>
+              </Textbox>
+              <Textbox Name="LabelCustomerName">
+                <CanGrow>true</CanGrow>
+                <KeepTogether>true</KeepTogether>
+                <Paragraphs>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value>CUSTOMER</Value>
+                        <Style>
+                          <FontFamily>Calibri</FontFamily>
+                          <FontWeight>Bold</FontWeight>
+                        </Style>
+                      </TextRun>
+                    </TextRuns>
+                    <Style />
+                  </Paragraph>
+                </Paragraphs>
+                <Top>0.02291in</Top>
+                <Left>0.0556in</Left>
+                <Height>0.18751in</Height>
+                <Width>0.85292in</Width>
+                <ZIndex>1</ZIndex>
                 <Style>
                   <Border>
                     <Style>None</Style>
@@ -105,10 +136,10 @@
               </Textbox>
             </ReportItems>
             <KeepTogether>true</KeepTogether>
-            <Top>0.92882in</Top>
-            <Left>0.72222in</Left>
+            <Top>0.80382in</Top>
+            <Left>0.72218in</Left>
             <Height>0.25208in</Height>
-            <Width>6.48958in</Width>
+            <Width>6.50906in</Width>
             <ZIndex>2</ZIndex>
             <Style>
               <Border>
@@ -129,7 +160,6 @@
                         <Value>LOCATION</Value>
                         <Style>
                           <FontFamily>Calibri</FontFamily>
-                          <FontSize>11pt</FontSize>
                           <FontWeight>Bold</FontWeight>
                         </Style>
                       </TextRun>
@@ -138,7 +168,7 @@
                   </Paragraph>
                 </Paragraphs>
                 <Top>0.03333in</Top>
-                <Left>0.075in</Left>
+                <Left>0.0556in</Left>
                 <Height>0.25in</Height>
                 <Width>0.85292in</Width>
                 <Style>
@@ -166,10 +196,10 @@
                   </Paragraph>
                 </Paragraphs>
                 <rd:DefaultName>Customer</rd:DefaultName>
-                <Top>0.03333in</Top>
-                <Left>0.97792in</Left>
+                <Top>0.01944in</Top>
+                <Left>0.97796in</Left>
                 <Height>0.25in</Height>
-                <Width>5.51166in</Width>
+                <Width>5.4061in</Width>
                 <ZIndex>1</ZIndex>
                 <Style>
                   <Border>
@@ -197,9 +227,9 @@
                 </Paragraphs>
                 <rd:DefaultName>Location</rd:DefaultName>
                 <Top>0.28333in</Top>
-                <Left>0.97792in</Left>
+                <Left>0.97796in</Left>
                 <Height>0.25in</Height>
-                <Width>5.51166in</Width>
+                <Width>5.4061in</Width>
                 <ZIndex>2</ZIndex>
                 <Style>
                   <Border>
@@ -213,10 +243,10 @@
               </Textbox>
             </ReportItems>
             <KeepTogether>true</KeepTogether>
-            <Top>1.17535in</Top>
-            <Left>0.72222in</Left>
+            <Top>1.05035in</Top>
+            <Left>0.72218in</Left>
             <Height>0.57291in</Height>
-            <Width>6.48958in</Width>
+            <Width>6.50906in</Width>
             <ZIndex>3</ZIndex>
             <Style>
               <Border>
@@ -228,39 +258,6 @@
               </TopBorder>
             </Style>
           </Rectangle>
-          <Textbox Name="LabelCustomerName">
-            <CanGrow>true</CanGrow>
-            <KeepTogether>true</KeepTogether>
-            <Paragraphs>
-              <Paragraph>
-                <TextRuns>
-                  <TextRun>
-                    <Value>CUSTOMER</Value>
-                    <Style>
-                      <FontFamily>Calibri</FontFamily>
-                      <FontSize>11pt</FontSize>
-                      <FontWeight>Bold</FontWeight>
-                    </Style>
-                  </TextRun>
-                </TextRuns>
-                <Style />
-              </Paragraph>
-            </Paragraphs>
-            <Top>0.9184in</Top>
-            <Left>0.79723in</Left>
-            <Height>0.25in</Height>
-            <Width>0.85292in</Width>
-            <ZIndex>4</ZIndex>
-            <Style>
-              <Border>
-                <Style>None</Style>
-              </Border>
-              <PaddingLeft>2pt</PaddingLeft>
-              <PaddingRight>2pt</PaddingRight>
-              <PaddingTop>2pt</PaddingTop>
-              <PaddingBottom>2pt</PaddingBottom>
-            </Style>
-          </Textbox>
           <Textbox Name="Servicenumber">
             <CanGrow>true</CanGrow>
             <KeepTogether>true</KeepTogether>
@@ -276,581 +273,11 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Servicenumber</rd:DefaultName>
-            <Top>0.61146in</Top>
+            <Top>0.48646in</Top>
             <Left>1.46403in</Left>
             <Height>0.25in</Height>
-            <Width>5.74777in</Width>
-            <ZIndex>5</ZIndex>
-            <Style>
-              <Border>
-                <Style>None</Style>
-              </Border>
-              <PaddingLeft>2pt</PaddingLeft>
-              <PaddingRight>2pt</PaddingRight>
-              <PaddingTop>2pt</PaddingTop>
-              <PaddingBottom>2pt</PaddingBottom>
-            </Style>
-          </Textbox>
-          <Rectangle Name="Rectangle5">
-            <ReportItems>
-              <Rectangle Name="Rectangle6">
-                <ReportItems>
-                  <Textbox Name="Model">
-                    <CanGrow>true</CanGrow>
-                    <KeepTogether>true</KeepTogether>
-                    <Paragraphs>
-                      <Paragraph>
-                        <TextRuns>
-                          <TextRun>
-                            <Value>=Parameters!Model.Value</Value>
-                            <Style />
-                          </TextRun>
-                        </TextRuns>
-                        <Style />
-                      </Paragraph>
-                    </Paragraphs>
-                    <rd:DefaultName>Model</rd:DefaultName>
-                    <Top>0.27291in</Top>
-                    <Left>0.02778in</Left>
-                    <Height>0.25in</Height>
-                    <Width>1.82084in</Width>
-                    <Style>
-                      <Border>
-                        <Style>None</Style>
-                      </Border>
-                      <PaddingLeft>2pt</PaddingLeft>
-                      <PaddingRight>2pt</PaddingRight>
-                      <PaddingTop>2pt</PaddingTop>
-                      <PaddingBottom>2pt</PaddingBottom>
-                    </Style>
-                  </Textbox>
-                </ReportItems>
-                <KeepTogether>true</KeepTogether>
-                <Top>0.00209in</Top>
-                <Left>1.40014in</Left>
-                <Height>0.52291in</Height>
-                <Width>1.91806in</Width>
-                <Style>
-                  <Border>
-                    <Color>Gray</Color>
-                    <Style>Solid</Style>
-                  </Border>
-                  <TopBorder>
-                    <Style>None</Style>
-                  </TopBorder>
-                  <BottomBorder>
-                    <Style>None</Style>
-                  </BottomBorder>
-                </Style>
-              </Rectangle>
-              <Textbox Name="LabelCustomerName3">
-                <CanGrow>true</CanGrow>
-                <KeepTogether>true</KeepTogether>
-                <Paragraphs>
-                  <Paragraph>
-                    <TextRuns>
-                      <TextRun>
-                        <Value>EQUIPMENT NAME</Value>
-                        <Style>
-                          <FontStyle>Normal</FontStyle>
-                          <FontFamily>Calibri</FontFamily>
-                          <FontSize>11pt</FontSize>
-                          <FontWeight>Bold</FontWeight>
-                          <TextDecoration>None</TextDecoration>
-                          <Color>#000000</Color>
-                        </Style>
-                      </TextRun>
-                    </TextRuns>
-                    <Style />
-                  </Paragraph>
-                </Paragraphs>
-                <Top>0.00245in</Top>
-                <Left>0.08888in</Left>
-                <Height>0.25in</Height>
-                <Width>1.31125in</Width>
-                <ZIndex>1</ZIndex>
-                <Style>
-                  <Border>
-                    <Style>None</Style>
-                  </Border>
-                  <PaddingLeft>2pt</PaddingLeft>
-                  <PaddingRight>2pt</PaddingRight>
-                  <PaddingTop>2pt</PaddingTop>
-                  <PaddingBottom>2pt</PaddingBottom>
-                </Style>
-              </Textbox>
-              <Textbox Name="Manufacturer">
-                <CanGrow>true</CanGrow>
-                <KeepTogether>true</KeepTogether>
-                <Paragraphs>
-                  <Paragraph>
-                    <TextRuns>
-                      <TextRun>
-                        <Value>=Parameters!Manufacturer.Value</Value>
-                        <Style />
-                      </TextRun>
-                    </TextRuns>
-                    <Style />
-                  </Paragraph>
-                </Paragraphs>
-                <rd:DefaultName>Manufacturer</rd:DefaultName>
-                <Top>0.025in</Top>
-                <Left>5.00346in</Left>
-                <Height>0.25in</Height>
-                <Width>1.48612in</Width>
-                <ZIndex>2</ZIndex>
-                <Style>
-                  <Border>
-                    <Style>None</Style>
-                  </Border>
-                  <PaddingLeft>2pt</PaddingLeft>
-                  <PaddingRight>2pt</PaddingRight>
-                  <PaddingTop>2pt</PaddingTop>
-                  <PaddingBottom>2pt</PaddingBottom>
-                </Style>
-              </Textbox>
-              <Textbox Name="CountryOfOrigin">
-                <CanGrow>true</CanGrow>
-                <KeepTogether>true</KeepTogether>
-                <Paragraphs>
-                  <Paragraph>
-                    <TextRuns>
-                      <TextRun>
-                        <Value>=Parameters!CountryOfOrigin.Value</Value>
-                        <Style />
-                      </TextRun>
-                    </TextRuns>
-                    <Style />
-                  </Paragraph>
-                </Paragraphs>
-                <rd:DefaultName>CountryOfOrigin</rd:DefaultName>
-                <Top>0.275in</Top>
-                <Left>5.00346in</Left>
-                <Height>0.25in</Height>
-                <Width>1.48612in</Width>
-                <ZIndex>3</ZIndex>
-                <Style>
-                  <Border>
-                    <Style>None</Style>
-                  </Border>
-                  <PaddingLeft>2pt</PaddingLeft>
-                  <PaddingRight>2pt</PaddingRight>
-                  <PaddingTop>2pt</PaddingTop>
-                  <PaddingBottom>2pt</PaddingBottom>
-                </Style>
-              </Textbox>
-            </ReportItems>
-            <KeepTogether>true</KeepTogether>
-            <Top>1.9788in</Top>
-            <Left>0.72222in</Left>
-            <Height>0.525in</Height>
-            <Width>6.48958in</Width>
-            <ZIndex>6</ZIndex>
-            <Style>
-              <Border>
-                <Color>Gray</Color>
-                <Style>Solid</Style>
-              </Border>
-            </Style>
-          </Rectangle>
-          <Rectangle Name="Rectangle7">
-            <ReportItems>
-              <Textbox Name="LabelCustomerName5">
-                <CanGrow>true</CanGrow>
-                <KeepTogether>true</KeepTogether>
-                <Paragraphs>
-                  <Paragraph>
-                    <TextRuns>
-                      <TextRun>
-                        <Value>MANUFACTURER</Value>
-                        <Style>
-                          <FontFamily>Calibri</FontFamily>
-                          <FontSize>11pt</FontSize>
-                          <FontWeight>Bold</FontWeight>
-                        </Style>
-                      </TextRun>
-                    </TextRuns>
-                    <Style />
-                  </Paragraph>
-                </Paragraphs>
-                <Top>0.00036in</Top>
-                <Left>0.06944in</Left>
-                <Height>0.25in</Height>
-                <Width>1.19605in</Width>
-                <Style>
-                  <Border>
-                    <Style>None</Style>
-                  </Border>
-                  <PaddingLeft>2pt</PaddingLeft>
-                  <PaddingRight>2pt</PaddingRight>
-                  <PaddingTop>2pt</PaddingTop>
-                  <PaddingBottom>2pt</PaddingBottom>
-                </Style>
-              </Textbox>
-            </ReportItems>
-            <KeepTogether>true</KeepTogether>
-            <Top>1.98089in</Top>
-            <Left>4.04042in</Left>
-            <Height>0.27291in</Height>
-            <Width>1.65749in</Width>
-            <ZIndex>7</ZIndex>
-            <Style>
-              <Border>
-                <Color>Gray</Color>
-                <Style>Solid</Style>
-              </Border>
-              <TopBorder>
-                <Style>None</Style>
-              </TopBorder>
-              <BottomBorder>
-                <Style>None</Style>
-              </BottomBorder>
-              <LeftBorder>
-                <Style>None</Style>
-              </LeftBorder>
-            </Style>
-          </Rectangle>
-          <Rectangle Name="Rectangle8">
-            <ReportItems>
-              <Rectangle Name="Rectangle9">
-                <ReportItems>
-                  <Textbox Name="SerialNumber">
-                    <CanGrow>true</CanGrow>
-                    <KeepTogether>true</KeepTogether>
-                    <Paragraphs>
-                      <Paragraph>
-                        <TextRuns>
-                          <TextRun>
-                            <Value>=Parameters!SerialNumber.Value</Value>
-                            <Style />
-                          </TextRun>
-                        </TextRuns>
-                        <Style />
-                      </Paragraph>
-                    </Paragraphs>
-                    <rd:DefaultName>SerialNumber</rd:DefaultName>
-                    <Top>0.2625in</Top>
-                    <Left>0.02778in</Left>
-                    <Height>0.25in</Height>
-                    <Width>1.82084in</Width>
-                    <Style>
-                      <Border>
-                        <Style>None</Style>
-                      </Border>
-                      <PaddingLeft>2pt</PaddingLeft>
-                      <PaddingRight>2pt</PaddingRight>
-                      <PaddingTop>2pt</PaddingTop>
-                      <PaddingBottom>2pt</PaddingBottom>
-                    </Style>
-                  </Textbox>
-                </ReportItems>
-                <KeepTogether>true</KeepTogether>
-                <Left>1.40013in</Left>
-                <Height>0.5125in</Height>
-                <Width>1.91807in</Width>
-                <Style>
-                  <Border>
-                    <Color>Gray</Color>
-                    <Style>Solid</Style>
-                  </Border>
-                  <TopBorder>
-                    <Style>None</Style>
-                  </TopBorder>
-                  <BottomBorder>
-                    <Style>None</Style>
-                  </BottomBorder>
-                </Style>
-              </Rectangle>
-              <Textbox Name="ServiceDate">
-                <CanGrow>true</CanGrow>
-                <KeepTogether>true</KeepTogether>
-                <Paragraphs>
-                  <Paragraph>
-                    <TextRuns>
-                      <TextRun>
-                        <Value>=Parameters!ServiceDate.Value</Value>
-                        <Style />
-                      </TextRun>
-                    </TextRuns>
-                    <Style />
-                  </Paragraph>
-                </Paragraphs>
-                <rd:DefaultName>ServiceDate</rd:DefaultName>
-                <Top>0.25005in</Top>
-                <Left>5.00345in</Left>
-                <Height>0.25in</Height>
-                <Width>1.48612in</Width>
-                <ZIndex>1</ZIndex>
-                <Style>
-                  <Border>
-                    <Style>None</Style>
-                  </Border>
-                  <PaddingLeft>2pt</PaddingLeft>
-                  <PaddingRight>2pt</PaddingRight>
-                  <PaddingTop>2pt</PaddingTop>
-                  <PaddingBottom>2pt</PaddingBottom>
-                </Style>
-              </Textbox>
-            </ReportItems>
-            <KeepTogether>true</KeepTogether>
-            <Top>2.25519in</Top>
-            <Left>0.72223in</Left>
-            <Height>0.5125in</Height>
-            <Width>6.48958in</Width>
-            <ZIndex>8</ZIndex>
-            <Style>
-              <Border>
-                <Color>Gray</Color>
-                <Style>Solid</Style>
-              </Border>
-              <TopBorder>
-                <Style>None</Style>
-              </TopBorder>
-            </Style>
-          </Rectangle>
-          <Rectangle Name="Rectangle10">
-            <ReportItems>
-              <Textbox Name="LabelCustomerName6">
-                <CanGrow>true</CanGrow>
-                <KeepTogether>true</KeepTogether>
-                <Paragraphs>
-                  <Paragraph>
-                    <TextRuns>
-                      <TextRun>
-                        <Value>COUNTRY OF ORIGIN</Value>
-                        <Style>
-                          <FontFamily>Calibri</FontFamily>
-                          <FontSize>11pt</FontSize>
-                          <FontWeight>Bold</FontWeight>
-                        </Style>
-                      </TextRun>
-                    </TextRuns>
-                    <Style />
-                  </Paragraph>
-                </Paragraphs>
-                <Top>0.01143in</Top>
-                <Left>0.06943in</Left>
-                <Height>0.25in</Height>
-                <Width>1.45709in</Width>
-                <Style>
-                  <Border>
-                    <Style>None</Style>
-                  </Border>
-                  <PaddingLeft>2pt</PaddingLeft>
-                  <PaddingRight>2pt</PaddingRight>
-                  <PaddingTop>2pt</PaddingTop>
-                  <PaddingBottom>2pt</PaddingBottom>
-                </Style>
-              </Textbox>
-            </ReportItems>
-            <KeepTogether>true</KeepTogether>
-            <Top>2.25626in</Top>
-            <Left>4.04043in</Left>
-            <Height>0.28189in</Height>
-            <Width>1.65749in</Width>
-            <ZIndex>9</ZIndex>
-            <Style>
-              <Border>
-                <Color>Gray</Color>
-                <Style>Solid</Style>
-              </Border>
-              <TopBorder>
-                <Style>None</Style>
-              </TopBorder>
-              <BottomBorder>
-                <Style>None</Style>
-              </BottomBorder>
-              <LeftBorder>
-                <Style>None</Style>
-              </LeftBorder>
-            </Style>
-          </Rectangle>
-          <Textbox Name="LabelCustomerName4">
-            <CanGrow>true</CanGrow>
-            <KeepTogether>true</KeepTogether>
-            <Paragraphs>
-              <Paragraph>
-                <TextRuns>
-                  <TextRun>
-                    <Value>MODEL</Value>
-                    <Style>
-                      <FontFamily>Calibri</FontFamily>
-                      <FontSize>11pt</FontSize>
-                      <FontWeight>Bold</FontWeight>
-                    </Style>
-                  </TextRun>
-                </TextRuns>
-                <Style />
-              </Paragraph>
-            </Paragraphs>
-            <Top>2.25417in</Top>
-            <Left>0.81111in</Left>
-            <Height>0.25in</Height>
-            <Width>0.85292in</Width>
-            <ZIndex>10</ZIndex>
-            <Style>
-              <Border>
-                <Style>None</Style>
-              </Border>
-              <PaddingLeft>2pt</PaddingLeft>
-              <PaddingRight>2pt</PaddingRight>
-              <PaddingTop>2pt</PaddingTop>
-              <PaddingBottom>2pt</PaddingBottom>
-            </Style>
-          </Textbox>
-          <Rectangle Name="Rectangle11">
-            <ReportItems>
-              <Rectangle Name="Rectangle12">
-                <KeepTogether>true</KeepTogether>
-                <Left>1.40013in</Left>
-                <Height>0.27291in</Height>
-                <Width>1.91807in</Width>
-                <Style>
-                  <Border>
-                    <Color>Gray</Color>
-                    <Style>Solid</Style>
-                  </Border>
-                  <TopBorder>
-                    <Style>None</Style>
-                  </TopBorder>
-                  <BottomBorder>
-                    <Style>None</Style>
-                  </BottomBorder>
-                </Style>
-              </Rectangle>
-            </ReportItems>
-            <KeepTogether>true</KeepTogether>
-            <Top>2.50417in</Top>
-            <Left>0.72224in</Left>
-            <Height>0.28296in</Height>
-            <Width>6.48958in</Width>
-            <ZIndex>11</ZIndex>
-            <Style>
-              <Border>
-                <Color>Gray</Color>
-                <Style>Solid</Style>
-              </Border>
-              <TopBorder>
-                <Style>None</Style>
-              </TopBorder>
-            </Style>
-          </Rectangle>
-          <Rectangle Name="Rectangle13">
-            <ReportItems>
-              <Textbox Name="LabelCustomerName7">
-                <CanGrow>true</CanGrow>
-                <KeepTogether>true</KeepTogether>
-                <Paragraphs>
-                  <Paragraph>
-                    <TextRuns>
-                      <TextRun>
-                        <Value>SERVICE DATE</Value>
-                        <Style>
-                          <FontStyle>Normal</FontStyle>
-                          <FontFamily>Calibri</FontFamily>
-                          <FontSize>11pt</FontSize>
-                          <FontWeight>Bold</FontWeight>
-                          <TextDecoration>None</TextDecoration>
-                          <Color>#000000</Color>
-                        </Style>
-                      </TextRun>
-                    </TextRuns>
-                    <Style />
-                  </Paragraph>
-                </Paragraphs>
-                <Top>0.01143in</Top>
-                <Left>0.06943in</Left>
-                <Height>0.25in</Height>
-                <Width>1.45709in</Width>
-                <Style>
-                  <Border>
-                    <Style>None</Style>
-                  </Border>
-                  <PaddingLeft>2pt</PaddingLeft>
-                  <PaddingRight>2pt</PaddingRight>
-                  <PaddingTop>2pt</PaddingTop>
-                  <PaddingBottom>2pt</PaddingBottom>
-                </Style>
-              </Textbox>
-            </ReportItems>
-            <KeepTogether>true</KeepTogether>
-            <Top>2.50524in</Top>
-            <Left>4.04044in</Left>
-            <Height>0.28189in</Height>
-            <Width>1.65749in</Width>
-            <ZIndex>12</ZIndex>
-            <Style>
-              <Border>
-                <Color>Gray</Color>
-                <Style>Solid</Style>
-              </Border>
-              <TopBorder>
-                <Style>None</Style>
-              </TopBorder>
-              <BottomBorder>
-                <Style>None</Style>
-              </BottomBorder>
-              <LeftBorder>
-                <Style>None</Style>
-              </LeftBorder>
-            </Style>
-          </Rectangle>
-          <Textbox Name="LabelCustomerName8">
-            <CanGrow>true</CanGrow>
-            <KeepTogether>true</KeepTogether>
-            <Paragraphs>
-              <Paragraph>
-                <TextRuns>
-                  <TextRun>
-                    <Value>SERIAL #</Value>
-                    <Style>
-                      <FontStyle>Normal</FontStyle>
-                      <FontFamily>Calibri</FontFamily>
-                      <FontSize>11pt</FontSize>
-                      <FontWeight>Bold</FontWeight>
-                      <TextDecoration>None</TextDecoration>
-                      <Color>#000000</Color>
-                    </Style>
-                  </TextRun>
-                </TextRuns>
-                <Style />
-              </Paragraph>
-            </Paragraphs>
-            <Top>2.50315in</Top>
-            <Left>0.81112in</Left>
-            <Height>0.25in</Height>
-            <Width>0.85292in</Width>
-            <ZIndex>13</ZIndex>
-            <Style>
-              <Border>
-                <Style>None</Style>
-              </Border>
-              <PaddingLeft>2pt</PaddingLeft>
-              <PaddingRight>2pt</PaddingRight>
-              <PaddingTop>2pt</PaddingTop>
-              <PaddingBottom>2pt</PaddingBottom>
-            </Style>
-          </Textbox>
-          <Textbox Name="EquipmentName">
-            <CanGrow>true</CanGrow>
-            <KeepTogether>true</KeepTogether>
-            <Paragraphs>
-              <Paragraph>
-                <TextRuns>
-                  <TextRun>
-                    <Value>=Parameters!EquipmentName.Value</Value>
-                    <Style />
-                  </TextRun>
-                </TextRuns>
-                <Style />
-              </Paragraph>
-            </Paragraphs>
-            <rd:DefaultName>EquipmentName</rd:DefaultName>
-            <Top>1.97741in</Top>
-            <Left>2.15014in</Left>
-            <Height>0.25in</Height>
-            <Width>1.82084in</Width>
-            <ZIndex>14</ZIndex>
+            <Width>5.74773in</Width>
+            <ZIndex>4</ZIndex>
             <Style>
               <Border>
                 <Style>None</Style>
@@ -862,273 +289,166 @@
             </Style>
           </Textbox>
           <Rectangle Name="Rectangle3">
-            <KeepTogether>true</KeepTogether>
-            <Top>3.00209in</Top>
-            <Left>0.72224in</Left>
-            <Height>0.25208in</Height>
-            <Width>6.48958in</Width>
-            <ZIndex>15</ZIndex>
-            <Style>
-              <Border>
-                <Color>Gray</Color>
-                <Style>Solid</Style>
-              </Border>
-            </Style>
-          </Rectangle>
-          <Textbox Name="Textbox45">
-            <CanGrow>true</CanGrow>
-            <KeepTogether>true</KeepTogether>
-            <Paragraphs>
-              <Paragraph>
-                <TextRuns>
-                  <TextRun>
-                    <Value>TYPE OF SERVICE</Value>
-                    <Style>
-                      <FontStyle>Normal</FontStyle>
-                      <FontFamily>Calibri</FontFamily>
-                      <FontSize>11pt</FontSize>
-                      <FontWeight>Bold</FontWeight>
-                      <TextDecoration>None</TextDecoration>
-                      <Color>#000000</Color>
-                    </Style>
-                  </TextRun>
-                </TextRuns>
-                <Style />
-              </Paragraph>
-            </Paragraphs>
-            <rd:DefaultName>Textbox45</rd:DefaultName>
-            <Top>3.00209in</Top>
-            <Left>0.72222in</Left>
-            <Height>0.25in</Height>
-            <Width>2.58333in</Width>
-            <ZIndex>16</ZIndex>
-            <Style>
-              <Border>
-                <Style>None</Style>
-              </Border>
-              <PaddingLeft>2pt</PaddingLeft>
-              <PaddingRight>2pt</PaddingRight>
-              <PaddingTop>2pt</PaddingTop>
-              <PaddingBottom>2pt</PaddingBottom>
-            </Style>
-          </Textbox>
-          <Rectangle Name="Rectangle4">
-            <KeepTogether>true</KeepTogether>
-            <Top>3.25209in</Top>
-            <Left>0.72222in</Left>
-            <Height>0.25208in</Height>
-            <Width>6.48958in</Width>
-            <ZIndex>17</ZIndex>
-            <Style>
-              <Border>
-                <Color>Gray</Color>
-                <Style>Solid</Style>
-              </Border>
-              <TopBorder>
-                <Style>None</Style>
-              </TopBorder>
-            </Style>
-          </Rectangle>
-          <Textbox Name="ServiceType">
-            <CanGrow>true</CanGrow>
-            <KeepTogether>true</KeepTogether>
-            <Paragraphs>
-              <Paragraph>
-                <TextRuns>
-                  <TextRun>
-                    <Value>=Parameters!ServiceType.Value</Value>
-                    <Style />
-                  </TextRun>
-                </TextRuns>
-                <Style />
-              </Paragraph>
-            </Paragraphs>
-            <rd:DefaultName>ServiceType</rd:DefaultName>
-            <Top>3.25209in</Top>
-            <Left>0.72222in</Left>
-            <Height>0.25in</Height>
-            <Width>6.48958in</Width>
-            <ZIndex>18</ZIndex>
-            <Style>
-              <Border>
-                <Style>None</Style>
-              </Border>
-              <PaddingLeft>2pt</PaddingLeft>
-              <PaddingRight>2pt</PaddingRight>
-              <PaddingTop>2pt</PaddingTop>
-              <PaddingBottom>2pt</PaddingBottom>
-            </Style>
-          </Textbox>
-          <Rectangle Name="Rectangle14">
-            <KeepTogether>true</KeepTogether>
-            <Top>3.68125in</Top>
-            <Left>0.72222in</Left>
-            <Height>0.25208in</Height>
-            <Width>6.48958in</Width>
-            <ZIndex>19</ZIndex>
-            <Style>
-              <Border>
-                <Color>Gray</Color>
-                <Style>Solid</Style>
-              </Border>
-            </Style>
-          </Rectangle>
-          <Textbox Name="Textbox46">
-            <CanGrow>true</CanGrow>
-            <KeepTogether>true</KeepTogether>
-            <Paragraphs>
-              <Paragraph>
-                <TextRuns>
-                  <TextRun>
-                    <Value>COMPLAINTS / FAULTS</Value>
-                    <Style>
-                      <FontStyle>Normal</FontStyle>
-                      <FontFamily>Calibri</FontFamily>
-                      <FontSize>11pt</FontSize>
-                      <FontWeight>Bold</FontWeight>
-                      <TextDecoration>None</TextDecoration>
-                      <Color>#000000</Color>
-                    </Style>
-                  </TextRun>
-                </TextRuns>
-                <Style />
-              </Paragraph>
-            </Paragraphs>
-            <rd:DefaultName>Textbox45</rd:DefaultName>
-            <Top>3.68125in</Top>
-            <Left>0.7222in</Left>
-            <Height>0.25in</Height>
-            <Width>2.58333in</Width>
-            <ZIndex>20</ZIndex>
-            <Style>
-              <Border>
-                <Style>None</Style>
-              </Border>
-              <PaddingLeft>2pt</PaddingLeft>
-              <PaddingRight>2pt</PaddingRight>
-              <PaddingTop>2pt</PaddingTop>
-              <PaddingBottom>2pt</PaddingBottom>
-            </Style>
-          </Textbox>
-          <Rectangle Name="Rectangle15">
-            <KeepTogether>true</KeepTogether>
-            <Top>3.93125in</Top>
-            <Left>0.7222in</Left>
-            <Height>0.65833in</Height>
-            <Width>6.48958in</Width>
-            <ZIndex>21</ZIndex>
-            <Style>
-              <Border>
-                <Color>Gray</Color>
-                <Style>Solid</Style>
-              </Border>
-              <TopBorder>
-                <Style>None</Style>
-              </TopBorder>
-            </Style>
-          </Rectangle>
-          <Textbox Name="ComplaintFaults">
-            <CanGrow>true</CanGrow>
-            <KeepTogether>true</KeepTogether>
-            <Paragraphs>
-              <Paragraph>
-                <TextRuns>
-                  <TextRun>
-                    <Value>=Parameters!ComplaintFaults.Value</Value>
-                    <Style />
-                  </TextRun>
-                </TextRuns>
-                <Style />
-              </Paragraph>
-            </Paragraphs>
-            <rd:DefaultName>ComplaintFaults</rd:DefaultName>
-            <Top>3.93125in</Top>
-            <Left>0.72224in</Left>
-            <Height>0.65833in</Height>
-            <Width>6.48954in</Width>
-            <ZIndex>22</ZIndex>
-            <Style>
-              <Border>
-                <Style>None</Style>
-              </Border>
-              <PaddingLeft>2pt</PaddingLeft>
-              <PaddingRight>2pt</PaddingRight>
-              <PaddingTop>2pt</PaddingTop>
-              <PaddingBottom>2pt</PaddingBottom>
-            </Style>
-          </Textbox>
-          <Rectangle Name="Rectangle16">
-            <KeepTogether>true</KeepTogether>
-            <Top>4.78542in</Top>
-            <Left>0.72226in</Left>
-            <Height>0.25208in</Height>
-            <Width>6.48958in</Width>
-            <ZIndex>23</ZIndex>
-            <Style>
-              <Border>
-                <Color>Gray</Color>
-                <Style>Solid</Style>
-              </Border>
-            </Style>
-          </Rectangle>
-          <Textbox Name="Textbox47">
-            <CanGrow>true</CanGrow>
-            <KeepTogether>true</KeepTogether>
-            <Paragraphs>
-              <Paragraph>
-                <TextRuns>
-                  <TextRun>
-                    <Value>WORK DONE AND PARTS REPLACED</Value>
-                    <Style>
-                      <FontStyle>Normal</FontStyle>
-                      <FontFamily>Calibri</FontFamily>
-                      <FontSize>11pt</FontSize>
-                      <FontWeight>Bold</FontWeight>
-                      <TextDecoration>None</TextDecoration>
-                      <Color>#000000</Color>
-                    </Style>
-                  </TextRun>
-                </TextRuns>
-                <Style />
-              </Paragraph>
-            </Paragraphs>
-            <rd:DefaultName>Textbox45</rd:DefaultName>
-            <Top>4.78542in</Top>
-            <Left>0.72224in</Left>
-            <Height>0.25in</Height>
-            <Width>2.58333in</Width>
-            <ZIndex>24</ZIndex>
-            <Style>
-              <Border>
-                <Style>None</Style>
-              </Border>
-              <PaddingLeft>2pt</PaddingLeft>
-              <PaddingRight>2pt</PaddingRight>
-              <PaddingTop>2pt</PaddingTop>
-              <PaddingBottom>2pt</PaddingBottom>
-            </Style>
-          </Textbox>
-          <Rectangle Name="Rectangle17">
             <ReportItems>
-              <Textbox Name="WorkDonePartsReplaced">
+              <Textbox Name="Textbox45">
                 <CanGrow>true</CanGrow>
                 <KeepTogether>true</KeepTogether>
                 <Paragraphs>
                   <Paragraph>
                     <TextRuns>
                       <TextRun>
-                        <Value>=Parameters!WorkDonePartsReplaced.Value</Value>
+                        <Value>TYPE OF SERVICE</Value>
+                        <Style>
+                          <FontStyle>Normal</FontStyle>
+                          <FontFamily>Calibri</FontFamily>
+                          <FontWeight>Bold</FontWeight>
+                          <TextDecoration>None</TextDecoration>
+                          <Color>#000000</Color>
+                        </Style>
+                      </TextRun>
+                    </TextRuns>
+                    <Style />
+                  </Paragraph>
+                </Paragraphs>
+                <rd:DefaultName>Textbox45</rd:DefaultName>
+                <Top>0.0375in</Top>
+                <Left>0.05556in</Left>
+                <Height>0.16667in</Height>
+                <Width>2.58333in</Width>
+                <Style>
+                  <Border>
+                    <Style>None</Style>
+                  </Border>
+                  <PaddingTop>2pt</PaddingTop>
+                </Style>
+              </Textbox>
+            </ReportItems>
+            <KeepTogether>true</KeepTogether>
+            <Top>2.72709in</Top>
+            <Left>0.72222in</Left>
+            <Height>0.25208in</Height>
+            <Width>6.50902in</Width>
+            <ZIndex>5</ZIndex>
+            <Style>
+              <Border>
+                <Color>Gray</Color>
+                <Style>Solid</Style>
+              </Border>
+            </Style>
+          </Rectangle>
+          <Rectangle Name="Rectangle4">
+            <ReportItems>
+              <Textbox Name="ServiceType">
+                <CanGrow>true</CanGrow>
+                <KeepTogether>true</KeepTogether>
+                <Paragraphs>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value>=Parameters!ServiceType.Value</Value>
                         <Style />
                       </TextRun>
                     </TextRuns>
                     <Style />
                   </Paragraph>
                 </Paragraphs>
-                <rd:DefaultName>WorkDonePartsReplaced</rd:DefaultName>
-                <Top>0.01597in</Top>
-                <Left>0.00002in</Left>
-                <Height>0.59028in</Height>
-                <Width>6.48952in</Width>
+                <rd:DefaultName>ServiceType</rd:DefaultName>
+                <Top>0.03402in</Top>
+                <Left>0.05556in</Left>
+                <Height>0.1875in</Height>
+                <Width>6.32847in</Width>
+                <Style>
+                  <Border>
+                    <Style>None</Style>
+                  </Border>
+                </Style>
+              </Textbox>
+            </ReportItems>
+            <KeepTogether>true</KeepTogether>
+            <Top>2.97292in</Top>
+            <Left>0.72222in</Left>
+            <Height>0.25625in</Height>
+            <Width>6.50902in</Width>
+            <ZIndex>6</ZIndex>
+            <Style>
+              <Border>
+                <Color>Gray</Color>
+                <Style>Solid</Style>
+              </Border>
+              <TopBorder>
+                <Style>None</Style>
+              </TopBorder>
+            </Style>
+          </Rectangle>
+          <Rectangle Name="Rectangle14">
+            <ReportItems>
+              <Textbox Name="Textbox46">
+                <CanGrow>true</CanGrow>
+                <KeepTogether>true</KeepTogether>
+                <Paragraphs>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value>COMPLAINTS / FAULTS</Value>
+                        <Style>
+                          <FontStyle>Normal</FontStyle>
+                          <FontFamily>Calibri</FontFamily>
+                          <FontSize>11pt</FontSize>
+                          <FontWeight>Bold</FontWeight>
+                          <TextDecoration>None</TextDecoration>
+                          <Color>#000000</Color>
+                        </Style>
+                      </TextRun>
+                    </TextRuns>
+                    <Style />
+                  </Paragraph>
+                </Paragraphs>
+                <rd:DefaultName>Textbox45</rd:DefaultName>
+                <Top>0.03889in</Top>
+                <Left>0.05556in</Left>
+                <Height>0.16667in</Height>
+                <Width>1.8125in</Width>
+                <Style>
+                  <Border>
+                    <Style>None</Style>
+                  </Border>
+                </Style>
+              </Textbox>
+            </ReportItems>
+            <KeepTogether>true</KeepTogether>
+            <Top>3.34375in</Top>
+            <Left>0.72222in</Left>
+            <Height>0.25208in</Height>
+            <Width>6.50902in</Width>
+            <ZIndex>7</ZIndex>
+            <Style>
+              <Border>
+                <Color>Gray</Color>
+                <Style>Solid</Style>
+              </Border>
+            </Style>
+          </Rectangle>
+          <Rectangle Name="Rectangle15">
+            <ReportItems>
+              <Textbox Name="ComplaintFaults">
+                <CanGrow>true</CanGrow>
+                <KeepTogether>true</KeepTogether>
+                <Paragraphs>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value>=Parameters!ComplaintFaults.Value</Value>
+                        <Style />
+                      </TextRun>
+                    </TextRuns>
+                    <Style />
+                  </Paragraph>
+                </Paragraphs>
+                <rd:DefaultName>ComplaintFaults</rd:DefaultName>
+                <Top>0.0625in</Top>
+                <Left>0.05558in</Left>
+                <Height>0.5125in</Height>
+                <Width>6.35412in</Width>
                 <Style>
                   <Border>
                     <Style>None</Style>
@@ -1141,11 +461,105 @@
               </Textbox>
             </ReportItems>
             <KeepTogether>true</KeepTogether>
-            <Top>5.03542in</Top>
+            <Top>3.59375in</Top>
+            <Left>0.7222in</Left>
+            <Height>0.67916in</Height>
+            <Width>6.50904in</Width>
+            <ZIndex>8</ZIndex>
+            <Style>
+              <Border>
+                <Color>Gray</Color>
+                <Style>Solid</Style>
+              </Border>
+              <TopBorder>
+                <Style>None</Style>
+              </TopBorder>
+            </Style>
+          </Rectangle>
+          <Rectangle Name="Rectangle16">
+            <ReportItems>
+              <Textbox Name="Textbox47">
+                <CanGrow>true</CanGrow>
+                <KeepTogether>true</KeepTogether>
+                <Paragraphs>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value>WORK DONE AND PARTS REPLACED</Value>
+                        <Style>
+                          <FontStyle>Normal</FontStyle>
+                          <FontFamily>Calibri</FontFamily>
+                          <FontWeight>Bold</FontWeight>
+                          <TextDecoration>None</TextDecoration>
+                          <Color>#000000</Color>
+                        </Style>
+                      </TextRun>
+                    </TextRuns>
+                    <Style />
+                  </Paragraph>
+                </Paragraphs>
+                <rd:DefaultName>Textbox45</rd:DefaultName>
+                <Top>0.04167in</Top>
+                <Left>0.05552in</Left>
+                <Height>0.16667in</Height>
+                <Width>2.58333in</Width>
+                <Style>
+                  <Border>
+                    <Style>None</Style>
+                  </Border>
+                  <PaddingTop>2pt</PaddingTop>
+                </Style>
+              </Textbox>
+            </ReportItems>
+            <KeepTogether>true</KeepTogether>
+            <Top>4.41042in</Top>
+            <Left>0.72226in</Left>
+            <Height>0.25208in</Height>
+            <Width>6.50898in</Width>
+            <ZIndex>9</ZIndex>
+            <Style>
+              <Border>
+                <Color>Gray</Color>
+                <Style>Solid</Style>
+              </Border>
+            </Style>
+          </Rectangle>
+          <Rectangle Name="Rectangle17">
+            <ReportItems>
+              <Textbox Name="WorkDonePartsReplaced">
+                <CanGrow>true</CanGrow>
+                <KeepTogether>true</KeepTogether>
+                <Paragraphs>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value>=Parameters!WorkDonePartsReplaced.Value</Value>
+                        <Style>
+                          <FontSize>9pt</FontSize>
+                        </Style>
+                      </TextRun>
+                    </TextRuns>
+                    <Style />
+                  </Paragraph>
+                </Paragraphs>
+                <rd:DefaultName>WorkDonePartsReplaced</rd:DefaultName>
+                <Top>0.04375in</Top>
+                <Left>0.05554in</Left>
+                <Height>0.48264in</Height>
+                <Width>6.375in</Width>
+                <Style>
+                  <Border>
+                    <Style>None</Style>
+                  </Border>
+                </Style>
+              </Textbox>
+            </ReportItems>
+            <KeepTogether>true</KeepTogether>
+            <Top>4.66042in</Top>
             <Left>0.72224in</Left>
             <Height>0.60625in</Height>
-            <Width>6.48958in</Width>
-            <ZIndex>25</ZIndex>
+            <Width>6.509in</Width>
+            <ZIndex>10</ZIndex>
             <Style>
               <Border>
                 <Color>Gray</Color>
@@ -1157,12 +571,45 @@
             </Style>
           </Rectangle>
           <Rectangle Name="Rectangle18">
+            <ReportItems>
+              <Textbox Name="Textbox48">
+                <CanGrow>true</CanGrow>
+                <KeepTogether>true</KeepTogether>
+                <Paragraphs>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value>REMARKS</Value>
+                        <Style>
+                          <FontStyle>Normal</FontStyle>
+                          <FontFamily>Calibri</FontFamily>
+                          <FontWeight>Bold</FontWeight>
+                          <TextDecoration>None</TextDecoration>
+                          <Color>#000000</Color>
+                        </Style>
+                      </TextRun>
+                    </TextRuns>
+                    <Style />
+                  </Paragraph>
+                </Paragraphs>
+                <rd:DefaultName>Textbox45</rd:DefaultName>
+                <Top>0.03681in</Top>
+                <Left>0.05558in</Left>
+                <Height>0.15625in</Height>
+                <Width>2.58333in</Width>
+                <Style>
+                  <Border>
+                    <Style>None</Style>
+                  </Border>
+                </Style>
+              </Textbox>
+            </ReportItems>
             <KeepTogether>true</KeepTogether>
-            <Top>5.81146in</Top>
+            <Top>5.43646in</Top>
             <Left>0.7222in</Left>
             <Height>0.25208in</Height>
-            <Width>6.48958in</Width>
-            <ZIndex>26</ZIndex>
+            <Width>6.50904in</Width>
+            <ZIndex>11</ZIndex>
             <Style>
               <Border>
                 <Color>Gray</Color>
@@ -1170,50 +617,42 @@
               </Border>
             </Style>
           </Rectangle>
-          <Textbox Name="Textbox48">
-            <CanGrow>true</CanGrow>
-            <KeepTogether>true</KeepTogether>
-            <Paragraphs>
-              <Paragraph>
-                <TextRuns>
-                  <TextRun>
-                    <Value>REMARKS</Value>
-                    <Style>
-                      <FontStyle>Normal</FontStyle>
-                      <FontFamily>Calibri</FontFamily>
-                      <FontSize>11pt</FontSize>
-                      <FontWeight>Bold</FontWeight>
-                      <TextDecoration>None</TextDecoration>
-                      <Color>#000000</Color>
-                    </Style>
-                  </TextRun>
-                </TextRuns>
-                <Style />
-              </Paragraph>
-            </Paragraphs>
-            <rd:DefaultName>Textbox45</rd:DefaultName>
-            <Top>5.81146in</Top>
-            <Left>0.72218in</Left>
-            <Height>0.25in</Height>
-            <Width>2.58333in</Width>
-            <ZIndex>27</ZIndex>
-            <Style>
-              <Border>
-                <Style>None</Style>
-              </Border>
-              <PaddingLeft>2pt</PaddingLeft>
-              <PaddingRight>2pt</PaddingRight>
-              <PaddingTop>2pt</PaddingTop>
-              <PaddingBottom>2pt</PaddingBottom>
-            </Style>
-          </Textbox>
           <Rectangle Name="Rectangle19">
+            <ReportItems>
+              <Textbox Name="Remarks">
+                <CanGrow>true</CanGrow>
+                <KeepTogether>true</KeepTogether>
+                <Paragraphs>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value>=Parameters!Remarks.Value</Value>
+                        <Style>
+                          <FontSize>9pt</FontSize>
+                        </Style>
+                      </TextRun>
+                    </TextRuns>
+                    <Style />
+                  </Paragraph>
+                </Paragraphs>
+                <rd:DefaultName>Remarks</rd:DefaultName>
+                <Top>0.05208in</Top>
+                <Left>0.0556in</Left>
+                <Height>0.25in</Height>
+                <Width>6.35404in</Width>
+                <Style>
+                  <Border>
+                    <Style>None</Style>
+                  </Border>
+                </Style>
+              </Textbox>
+            </ReportItems>
             <KeepTogether>true</KeepTogether>
-            <Top>6.06146in</Top>
+            <Top>5.68646in</Top>
             <Left>0.72218in</Left>
             <Height>0.375in</Height>
-            <Width>6.48958in</Width>
-            <ZIndex>28</ZIndex>
+            <Width>6.50906in</Width>
+            <ZIndex>12</ZIndex>
             <Style>
               <Border>
                 <Color>Gray</Color>
@@ -1224,43 +663,47 @@
               </TopBorder>
             </Style>
           </Rectangle>
-          <Textbox Name="Remarks">
-            <CanGrow>true</CanGrow>
-            <KeepTogether>true</KeepTogether>
-            <Paragraphs>
-              <Paragraph>
-                <TextRuns>
-                  <TextRun>
-                    <Value>=Parameters!Remarks.Value</Value>
-                    <Style />
-                  </TextRun>
-                </TextRuns>
-                <Style />
-              </Paragraph>
-            </Paragraphs>
-            <rd:DefaultName>Remarks</rd:DefaultName>
-            <Top>6.06146in</Top>
-            <Left>0.72226in</Left>
-            <Height>0.375in</Height>
-            <Width>6.4895in</Width>
-            <ZIndex>29</ZIndex>
-            <Style>
-              <Border>
-                <Style>None</Style>
-              </Border>
-              <PaddingLeft>2pt</PaddingLeft>
-              <PaddingRight>2pt</PaddingRight>
-              <PaddingTop>2pt</PaddingTop>
-              <PaddingBottom>2pt</PaddingBottom>
-            </Style>
-          </Textbox>
           <Rectangle Name="Rectangle20">
+            <ReportItems>
+              <Textbox Name="Textbox56">
+                <CanGrow>true</CanGrow>
+                <KeepTogether>true</KeepTogether>
+                <Paragraphs>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value>Repair / Service of the said equipment’s in this report is up to the satisfaction of the customer</Value>
+                        <Style>
+                          <FontStyle>Normal</FontStyle>
+                          <FontFamily>Calibri</FontFamily>
+                          <FontSize>9pt</FontSize>
+                          <FontWeight>Normal</FontWeight>
+                          <TextDecoration>None</TextDecoration>
+                          <Color>#000000</Color>
+                        </Style>
+                      </TextRun>
+                    </TextRuns>
+                    <Style />
+                  </Paragraph>
+                </Paragraphs>
+                <rd:DefaultName>Textbox56</rd:DefaultName>
+                <Top>0.04861in</Top>
+                <Left>0.05552in</Left>
+                <Height>0.14583in</Height>
+                <Width>5.99439in</Width>
+                <Style>
+                  <Border>
+                    <Style>None</Style>
+                  </Border>
+                </Style>
+              </Textbox>
+            </ReportItems>
             <KeepTogether>true</KeepTogether>
-            <Top>6.66563in</Top>
+            <Top>6.26563in</Top>
             <Left>0.72226in</Left>
             <Height>0.25208in</Height>
             <Width>6.48958in</Width>
-            <ZIndex>30</ZIndex>
+            <ZIndex>13</ZIndex>
             <Style>
               <Border>
                 <Color>Gray</Color>
@@ -1268,50 +711,13 @@
               </Border>
             </Style>
           </Rectangle>
-          <Textbox Name="Textbox56">
-            <CanGrow>true</CanGrow>
-            <KeepTogether>true</KeepTogether>
-            <Paragraphs>
-              <Paragraph>
-                <TextRuns>
-                  <TextRun>
-                    <Value>Repair / Service of the said equipment’s in this report is up to the satisfaction of the customer</Value>
-                    <Style>
-                      <FontStyle>Normal</FontStyle>
-                      <FontFamily>Calibri</FontFamily>
-                      <FontSize>11pt</FontSize>
-                      <FontWeight>Normal</FontWeight>
-                      <TextDecoration>None</TextDecoration>
-                      <Color>#000000</Color>
-                    </Style>
-                  </TextRun>
-                </TextRuns>
-                <Style />
-              </Paragraph>
-            </Paragraphs>
-            <rd:DefaultName>Textbox56</rd:DefaultName>
-            <Top>6.66563in</Top>
-            <Left>0.81112in</Left>
-            <Height>0.25in</Height>
-            <Width>6.40064in</Width>
-            <ZIndex>31</ZIndex>
-            <Style>
-              <Border>
-                <Style>None</Style>
-              </Border>
-              <PaddingLeft>2pt</PaddingLeft>
-              <PaddingRight>2pt</PaddingRight>
-              <PaddingTop>2pt</PaddingTop>
-              <PaddingBottom>2pt</PaddingBottom>
-            </Style>
-          </Textbox>
           <Rectangle Name="Rectangle21">
             <KeepTogether>true</KeepTogether>
-            <Top>6.92952in</Top>
+            <Top>6.52952in</Top>
             <Left>0.72218in</Left>
             <Height>0.25208in</Height>
             <Width>6.48958in</Width>
-            <ZIndex>32</ZIndex>
+            <ZIndex>14</ZIndex>
             <Style>
               <Border>
                 <Color>Gray</Color>
@@ -1335,7 +741,6 @@
                         <Style>
                           <FontStyle>Normal</FontStyle>
                           <FontFamily>Calibri</FontFamily>
-                          <FontSize>11pt</FontSize>
                           <FontWeight>Bold</FontWeight>
                           <TextDecoration>None</TextDecoration>
                           <Color>#000000</Color>
@@ -1346,27 +751,23 @@
                   </Paragraph>
                 </Paragraphs>
                 <rd:DefaultName>Textbox45</rd:DefaultName>
-                <Top>0.0125in</Top>
+                <Top>0.03473in</Top>
                 <Left>0.09255in</Left>
-                <Height>0.21007in</Height>
+                <Height>0.15799in</Height>
                 <Width>0.59375in</Width>
                 <Style>
                   <Border>
                     <Style>None</Style>
                   </Border>
-                  <PaddingLeft>2pt</PaddingLeft>
-                  <PaddingRight>2pt</PaddingRight>
-                  <PaddingTop>2pt</PaddingTop>
-                  <PaddingBottom>2pt</PaddingBottom>
                 </Style>
               </Textbox>
             </ReportItems>
             <KeepTogether>true</KeepTogether>
-            <Top>7.1816in</Top>
+            <Top>6.7816in</Top>
             <Left>0.72218in</Left>
             <Height>0.25347in</Height>
             <Width>6.48958in</Width>
-            <ZIndex>33</ZIndex>
+            <ZIndex>15</ZIndex>
             <Style>
               <Border>
                 <Color>Gray</Color>
@@ -1390,7 +791,6 @@
                         <Style>
                           <FontStyle>Normal</FontStyle>
                           <FontFamily>Calibri</FontFamily>
-                          <FontSize>11pt</FontSize>
                           <FontWeight>Bold</FontWeight>
                           <TextDecoration>None</TextDecoration>
                           <Color>#000000</Color>
@@ -1401,112 +801,23 @@
                   </Paragraph>
                 </Paragraphs>
                 <rd:DefaultName>Textbox45</rd:DefaultName>
-                <Top>0.02639in</Top>
+                <Top>0.05139in</Top>
                 <Left>0.09255in</Left>
-                <Height>0.20833in</Height>
-                <Width>0.89583in</Width>
+                <Height>0.15625in</Height>
+                <Width>0.78125in</Width>
                 <Style>
                   <Border>
                     <Style>None</Style>
                   </Border>
-                  <PaddingLeft>2pt</PaddingLeft>
-                  <PaddingRight>2pt</PaddingRight>
-                  <PaddingTop>2pt</PaddingTop>
-                  <PaddingBottom>2pt</PaddingBottom>
                 </Style>
               </Textbox>
             </ReportItems>
             <KeepTogether>true</KeepTogether>
-            <Top>7.43334in</Top>
+            <Top>7.03334in</Top>
             <Left>0.72218in</Left>
             <Height>0.25208in</Height>
             <Width>6.48958in</Width>
-            <ZIndex>34</ZIndex>
-            <Style>
-              <Border>
-                <Color>Gray</Color>
-                <Style>Solid</Style>
-              </Border>
-              <TopBorder>
-                <Style>None</Style>
-              </TopBorder>
-            </Style>
-          </Rectangle>
-          <Rectangle Name="Rectangle25">
-            <ReportItems>
-              <Textbox Name="Textbox51">
-                <CanGrow>true</CanGrow>
-                <KeepTogether>true</KeepTogether>
-                <Paragraphs>
-                  <Paragraph>
-                    <TextRuns>
-                      <TextRun>
-                        <Value>Date: </Value>
-                        <Style>
-                          <FontStyle>Normal</FontStyle>
-                          <FontFamily>Calibri</FontFamily>
-                          <FontSize>11pt</FontSize>
-                          <FontWeight>Bold</FontWeight>
-                          <TextDecoration>None</TextDecoration>
-                          <Color>#000000</Color>
-                        </Style>
-                      </TextRun>
-                    </TextRuns>
-                    <Style />
-                  </Paragraph>
-                </Paragraphs>
-                <rd:DefaultName>Textbox45</rd:DefaultName>
-                <Top>0.0118in</Top>
-                <Left>0.09247in</Left>
-                <Height>0.20833in</Height>
-                <Width>0.47916in</Width>
-                <Style>
-                  <Border>
-                    <Style>None</Style>
-                  </Border>
-                  <PaddingLeft>2pt</PaddingLeft>
-                  <PaddingRight>2pt</PaddingRight>
-                  <PaddingTop>2pt</PaddingTop>
-                  <PaddingBottom>2pt</PaddingBottom>
-                </Style>
-              </Textbox>
-              <Textbox Name="CustomerName1">
-                <CanGrow>true</CanGrow>
-                <KeepTogether>true</KeepTogether>
-                <Paragraphs>
-                  <Paragraph>
-                    <TextRuns>
-                      <TextRun>
-                        <Value>=Parameters!CustomerName.Value</Value>
-                        <Style />
-                      </TextRun>
-                    </TextRuns>
-                    <Style />
-                  </Paragraph>
-                </Paragraphs>
-                <rd:DefaultName>CustomerName1</rd:DefaultName>
-                <Top>0.24514in</Top>
-                <Left>0.97788in</Left>
-                <Height>0.25in</Height>
-                <Width>2.57292in</Width>
-                <ZIndex>1</ZIndex>
-                <Style>
-                  <Border>
-                    <Style>None</Style>
-                  </Border>
-                  <PaddingLeft>2pt</PaddingLeft>
-                  <PaddingRight>2pt</PaddingRight>
-                  <PaddingTop>2pt</PaddingTop>
-                  <PaddingBottom>2pt</PaddingBottom>
-                </Style>
-              </Textbox>
-            </ReportItems>
-            <KeepTogether>true</KeepTogether>
-            <Top>7.6875in</Top>
-            <Left>0.72226in</Left>
-            <Height>0.49514in</Height>
-            <Width>6.48958in</Width>
-            <ZIndex>35</ZIndex>
+            <ZIndex>16</ZIndex>
             <Style>
               <Border>
                 <Color>Gray</Color>
@@ -1530,7 +841,6 @@
                         <Style>
                           <FontStyle>Normal</FontStyle>
                           <FontFamily>Calibri</FontFamily>
-                          <FontSize>11pt</FontSize>
                           <FontWeight>Bold</FontWeight>
                           <TextDecoration>None</TextDecoration>
                           <Color>#000000</Color>
@@ -1541,18 +851,14 @@
                   </Paragraph>
                 </Paragraphs>
                 <rd:DefaultName>Textbox45</rd:DefaultName>
-                <Top>0.01667in</Top>
+                <Top>0.05417in</Top>
                 <Left>0.09247in</Left>
-                <Height>0.20833in</Height>
-                <Width>0.89583in</Width>
+                <Height>0.14583in</Height>
+                <Width>0.78125in</Width>
                 <Style>
                   <Border>
                     <Style>None</Style>
                   </Border>
-                  <PaddingLeft>2pt</PaddingLeft>
-                  <PaddingRight>2pt</PaddingRight>
-                  <PaddingTop>2pt</PaddingTop>
-                  <PaddingBottom>2pt</PaddingBottom>
                 </Style>
               </Textbox>
               <Textbox Name="Textbox53">
@@ -1566,7 +872,6 @@
                         <Style>
                           <FontStyle>Normal</FontStyle>
                           <FontFamily>Calibri</FontFamily>
-                          <FontSize>11pt</FontSize>
                           <FontWeight>Bold</FontWeight>
                           <TextDecoration>None</TextDecoration>
                           <Color>#000000</Color>
@@ -1577,28 +882,52 @@
                   </Paragraph>
                 </Paragraphs>
                 <rd:DefaultName>Textbox45</rd:DefaultName>
-                <Top>0.01667in</Top>
+                <Top>0.04375in</Top>
                 <Left>3.83429in</Left>
-                <Height>0.20833in</Height>
+                <Height>0.15625in</Height>
                 <Width>1.26041in</Width>
                 <ZIndex>1</ZIndex>
                 <Style>
                   <Border>
                     <Style>None</Style>
                   </Border>
-                  <PaddingLeft>2pt</PaddingLeft>
-                  <PaddingRight>2pt</PaddingRight>
-                  <PaddingTop>2pt</PaddingTop>
-                  <PaddingBottom>2pt</PaddingBottom>
+                </Style>
+              </Textbox>
+              <Textbox Name="CustomerName1">
+                <CanGrow>true</CanGrow>
+                <KeepTogether>true</KeepTogether>
+                <Paragraphs>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value>=Parameters!CustomerName.Value</Value>
+                        <Style>
+                          <FontSize>9pt</FontSize>
+                        </Style>
+                      </TextRun>
+                    </TextRuns>
+                    <Style />
+                  </Paragraph>
+                </Paragraphs>
+                <rd:DefaultName>CustomerName1</rd:DefaultName>
+                <Top>0.04028in</Top>
+                <Left>0.94316in</Left>
+                <Height>0.16667in</Height>
+                <Width>2.57292in</Width>
+                <ZIndex>2</ZIndex>
+                <Style>
+                  <Border>
+                    <Style>None</Style>
+                  </Border>
                 </Style>
               </Textbox>
             </ReportItems>
             <KeepTogether>true</KeepTogether>
-            <Top>7.93264in</Top>
+            <Top>7.53264in</Top>
             <Left>0.72226in</Left>
             <Height>0.25208in</Height>
             <Width>6.48958in</Width>
-            <ZIndex>36</ZIndex>
+            <ZIndex>17</ZIndex>
             <Style>
               <Border>
                 <Color>Gray</Color>
@@ -1620,7 +949,6 @@
                     <Style>
                       <FontStyle>Normal</FontStyle>
                       <FontFamily>Calibri</FontFamily>
-                      <FontSize>11pt</FontSize>
                       <FontWeight>Bold</FontWeight>
                       <TextDecoration>None</TextDecoration>
                       <Color>#000000</Color>
@@ -1631,19 +959,15 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox45</rd:DefaultName>
-            <Top>8.43229in</Top>
+            <Top>8.04341in</Top>
             <Left>0.72218in</Left>
-            <Height>0.25in</Height>
-            <Width>2.58333in</Width>
-            <ZIndex>37</ZIndex>
+            <Height>0.16667in</Height>
+            <Width>1.58333in</Width>
+            <ZIndex>18</ZIndex>
             <Style>
               <Border>
                 <Style>None</Style>
               </Border>
-              <PaddingLeft>2pt</PaddingLeft>
-              <PaddingRight>2pt</PaddingRight>
-              <PaddingTop>2pt</PaddingTop>
-              <PaddingBottom>2pt</PaddingBottom>
             </Style>
           </Textbox>
           <Rectangle Name="Rectangle22">
@@ -1659,7 +983,6 @@
                         <Style>
                           <FontStyle>Normal</FontStyle>
                           <FontFamily>Calibri</FontFamily>
-                          <FontSize>11pt</FontSize>
                           <FontWeight>Bold</FontWeight>
                           <TextDecoration>None</TextDecoration>
                           <Color>#000000</Color>
@@ -1670,27 +993,23 @@
                   </Paragraph>
                 </Paragraphs>
                 <rd:DefaultName>Textbox45</rd:DefaultName>
-                <Top>0.01562in</Top>
+                <Top>0.05312in</Top>
                 <Left>0.09255in</Left>
-                <Height>0.21007in</Height>
+                <Height>0.15799in</Height>
                 <Width>0.59375in</Width>
                 <Style>
                   <Border>
                     <Style>None</Style>
                   </Border>
-                  <PaddingLeft>2pt</PaddingLeft>
-                  <PaddingRight>2pt</PaddingRight>
-                  <PaddingTop>2pt</PaddingTop>
-                  <PaddingBottom>2pt</PaddingBottom>
                 </Style>
               </Textbox>
             </ReportItems>
             <KeepTogether>true</KeepTogether>
-            <Top>8.75174in</Top>
+            <Top>8.27674in</Top>
             <Left>0.72218in</Left>
-            <Height>0.25208in</Height>
+            <Height>0.28957in</Height>
             <Width>1.125in</Width>
-            <ZIndex>38</ZIndex>
+            <ZIndex>19</ZIndex>
             <Style>
               <Border>
                 <Color>Gray</Color>
@@ -1700,7 +1019,7 @@
                 <Width>1pt</Width>
               </TopBorder>
               <BottomBorder>
-                <Style>None</Style>
+                <Width>1pt</Width>
               </BottomBorder>
             </Style>
           </Rectangle>
@@ -1717,7 +1036,6 @@
                         <Style>
                           <FontStyle>Normal</FontStyle>
                           <FontFamily>Calibri</FontFamily>
-                          <FontSize>11pt</FontSize>
                           <FontWeight>Bold</FontWeight>
                           <TextDecoration>None</TextDecoration>
                           <Color>#000000</Color>
@@ -1728,27 +1046,23 @@
                   </Paragraph>
                 </Paragraphs>
                 <rd:DefaultName>Textbox45</rd:DefaultName>
-                <Top>0.02479in</Top>
+                <Top>0.04979in</Top>
                 <Left>0.09255in</Left>
-                <Height>0.25in</Height>
+                <Height>0.15625in</Height>
                 <Width>0.89583in</Width>
                 <Style>
                   <Border>
                     <Style>None</Style>
                   </Border>
-                  <PaddingLeft>2pt</PaddingLeft>
-                  <PaddingRight>2pt</PaddingRight>
-                  <PaddingTop>2pt</PaddingTop>
-                  <PaddingBottom>2pt</PaddingBottom>
                 </Style>
               </Textbox>
             </ReportItems>
             <KeepTogether>true</KeepTogether>
-            <Top>9.00521in</Top>
+            <Top>8.56631in</Top>
             <Left>0.72218in</Left>
             <Height>0.27479in</Height>
             <Width>1.125in</Width>
-            <ZIndex>39</ZIndex>
+            <ZIndex>20</ZIndex>
             <Style>
               <Border>
                 <Color>Gray</Color>
@@ -1772,34 +1086,32 @@
                     <TextRuns>
                       <TextRun>
                         <Value>=Parameters!EmployeeDesignation.Value</Value>
-                        <Style />
+                        <Style>
+                          <FontSize>9pt</FontSize>
+                        </Style>
                       </TextRun>
                     </TextRuns>
                     <Style />
                   </Paragraph>
                 </Paragraphs>
                 <rd:DefaultName>EmployeeDesignation</rd:DefaultName>
-                <Top>0in</Top>
-                <Left>0.05139in</Left>
-                <Height>0.25in</Height>
-                <Width>5.32292in</Width>
+                <Top>0.0498in</Top>
+                <Left>0.06528in</Left>
+                <Height>0.17708in</Height>
+                <Width>1.63186in</Width>
                 <Style>
                   <Border>
                     <Style>None</Style>
                   </Border>
-                  <PaddingLeft>2pt</PaddingLeft>
-                  <PaddingRight>2pt</PaddingRight>
-                  <PaddingTop>2pt</PaddingTop>
-                  <PaddingBottom>2pt</PaddingBottom>
                 </Style>
               </Textbox>
             </ReportItems>
             <KeepTogether>true</KeepTogether>
-            <Top>9.0052in</Top>
+            <Top>8.5663in</Top>
             <Left>1.83746in</Left>
             <Height>0.2748in</Height>
             <Width>5.37431in</Width>
-            <ZIndex>40</ZIndex>
+            <ZIndex>21</ZIndex>
             <Style>
               <Border>
                 <Color>Gray</Color>
@@ -1817,12 +1129,41 @@
             </Style>
           </Rectangle>
           <Rectangle Name="Rectangle29">
+            <ReportItems>
+              <Textbox Name="EmployeeName">
+                <CanGrow>true</CanGrow>
+                <KeepTogether>true</KeepTogether>
+                <Paragraphs>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value>=Parameters!EmployeeName.Value</Value>
+                        <Style>
+                          <FontSize>9pt</FontSize>
+                        </Style>
+                      </TextRun>
+                    </TextRuns>
+                    <Style />
+                  </Paragraph>
+                </Paragraphs>
+                <rd:DefaultName>EmployeeName</rd:DefaultName>
+                <Top>0.05693in</Top>
+                <Left>0.06528in</Left>
+                <Height>0.17708in</Height>
+                <Width>1.44448in</Width>
+                <Style>
+                  <Border>
+                    <Style>None</Style>
+                  </Border>
+                </Style>
+              </Textbox>
+            </ReportItems>
             <KeepTogether>true</KeepTogether>
-            <Top>8.75173in</Top>
+            <Top>8.27673in</Top>
             <Left>1.83746in</Left>
-            <Height>0.25208in</Height>
+            <Height>0.28958in</Height>
             <Width>5.37431in</Width>
-            <ZIndex>41</ZIndex>
+            <ZIndex>22</ZIndex>
             <Style>
               <Border>
                 <Color>Gray</Color>
@@ -1832,45 +1173,663 @@
                 <Width>1pt</Width>
               </TopBorder>
               <BottomBorder>
-                <Style>None</Style>
+                <Width>1pt</Width>
               </BottomBorder>
               <LeftBorder>
-                <Style>None</Style>
+                <Width>1pt</Width>
               </LeftBorder>
             </Style>
           </Rectangle>
-          <Textbox Name="EmployeeName">
-            <CanGrow>true</CanGrow>
-            <KeepTogether>true</KeepTogether>
-            <Paragraphs>
-              <Paragraph>
-                <TextRuns>
-                  <TextRun>
-                    <Value>=Parameters!EmployeeName.Value</Value>
+          <Rectangle Name="Rectangle12">
+            <ReportItems>
+              <Textbox Name="LabelCustomerName3">
+                <CanGrow>true</CanGrow>
+                <KeepTogether>true</KeepTogether>
+                <Paragraphs>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value>EQUIPMENT NAME</Value>
+                        <Style>
+                          <FontStyle>Normal</FontStyle>
+                          <FontFamily>Calibri</FontFamily>
+                          <FontWeight>Bold</FontWeight>
+                          <TextDecoration>None</TextDecoration>
+                          <Color>#000000</Color>
+                        </Style>
+                      </TextRun>
+                    </TextRuns>
                     <Style />
-                  </TextRun>
-                </TextRuns>
-                <Style />
-              </Paragraph>
-            </Paragraphs>
-            <rd:DefaultName>EmployeeName</rd:DefaultName>
-            <Top>8.73785in</Top>
-            <Left>1.88885in</Left>
-            <Height>0.25in</Height>
-            <Width>5.32292in</Width>
-            <ZIndex>42</ZIndex>
+                  </Paragraph>
+                </Paragraphs>
+                <Top>0.05481in</Top>
+                <Left>0.0556in</Left>
+                <Height>0.16426in</Height>
+                <Width>1.14459in</Width>
+                <Style>
+                  <Border>
+                    <Style>None</Style>
+                  </Border>
+                </Style>
+              </Textbox>
+            </ReportItems>
+            <KeepTogether>true</KeepTogether>
+            <Top>1.73996in</Top>
+            <Left>0.72218in</Left>
+            <Height>0.28852in</Height>
+            <Width>1.28915in</Width>
+            <ZIndex>23</ZIndex>
             <Style>
               <Border>
-                <Style>None</Style>
+                <Color>Gray</Color>
+                <Style>Solid</Style>
               </Border>
-              <PaddingLeft>2pt</PaddingLeft>
-              <PaddingRight>2pt</PaddingRight>
-              <PaddingTop>2pt</PaddingTop>
-              <PaddingBottom>2pt</PaddingBottom>
+              <TopBorder>
+                <Width>1pt</Width>
+              </TopBorder>
+              <BottomBorder>
+                <Width>1pt</Width>
+              </BottomBorder>
+              <RightBorder>
+                <Style>None</Style>
+              </RightBorder>
             </Style>
-          </Textbox>
+          </Rectangle>
+          <Rectangle Name="Rectangle13">
+            <ReportItems>
+              <Textbox Name="EquipmentName">
+                <CanGrow>true</CanGrow>
+                <KeepTogether>true</KeepTogether>
+                <Paragraphs>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value>=Parameters!EquipmentName.Value</Value>
+                        <Style>
+                          <FontSize>9pt</FontSize>
+                        </Style>
+                      </TextRun>
+                    </TextRuns>
+                    <Style />
+                  </Paragraph>
+                </Paragraphs>
+                <rd:DefaultName>EquipmentName</rd:DefaultName>
+                <Top>0.0562in</Top>
+                <Left>0.06944in</Left>
+                <Height>0.16426in</Height>
+                <Width>1.82084in</Width>
+                <Style>
+                  <Border>
+                    <Style>None</Style>
+                  </Border>
+                </Style>
+              </Textbox>
+            </ReportItems>
+            <KeepTogether>true</KeepTogether>
+            <Top>1.73857in</Top>
+            <Left>2.01133in</Left>
+            <Height>0.2899in</Height>
+            <Width>2.04857in</Width>
+            <ZIndex>24</ZIndex>
+            <Style>
+              <Border>
+                <Color>Gray</Color>
+                <Style>Solid</Style>
+              </Border>
+              <TopBorder>
+                <Width>1pt</Width>
+              </TopBorder>
+              <BottomBorder>
+                <Width>1pt</Width>
+              </BottomBorder>
+            </Style>
+          </Rectangle>
+          <Rectangle Name="Rectangle30">
+            <ReportItems>
+              <Textbox Name="LabelCustomerName5">
+                <CanGrow>true</CanGrow>
+                <KeepTogether>true</KeepTogether>
+                <Paragraphs>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value>MANUFACTURER</Value>
+                        <Style>
+                          <FontFamily>Calibri</FontFamily>
+                          <FontWeight>Bold</FontWeight>
+                        </Style>
+                      </TextRun>
+                    </TextRuns>
+                    <Style />
+                  </Paragraph>
+                </Paragraphs>
+                <Top>0.05481in</Top>
+                <Left>0.06944in</Left>
+                <Height>0.16426in</Height>
+                <Width>1.0398in</Width>
+                <Style>
+                  <Border>
+                    <Style>None</Style>
+                  </Border>
+                </Style>
+              </Textbox>
+            </ReportItems>
+            <KeepTogether>true</KeepTogether>
+            <Top>1.73996in</Top>
+            <Left>4.0599in</Left>
+            <Height>0.28852in</Height>
+            <Width>1.39719in</Width>
+            <ZIndex>25</ZIndex>
+            <Style>
+              <Border>
+                <Color>Gray</Color>
+                <Style>Solid</Style>
+              </Border>
+              <TopBorder>
+                <Width>1pt</Width>
+              </TopBorder>
+              <BottomBorder>
+                <Width>1pt</Width>
+              </BottomBorder>
+            </Style>
+          </Rectangle>
+          <Rectangle Name="Rectangle31">
+            <ReportItems>
+              <Textbox Name="Manufacturer">
+                <CanGrow>true</CanGrow>
+                <KeepTogether>true</KeepTogether>
+                <Paragraphs>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value>=Parameters!Manufacturer.Value</Value>
+                        <Style>
+                          <FontSize>9pt</FontSize>
+                        </Style>
+                      </TextRun>
+                    </TextRuns>
+                    <Style />
+                  </Paragraph>
+                </Paragraphs>
+                <rd:DefaultName>Manufacturer</rd:DefaultName>
+                <Top>0.0562in</Top>
+                <Left>0.10053in</Left>
+                <Height>0.16426in</Height>
+                <Width>1.54862in</Width>
+                <Style>
+                  <Border>
+                    <Style>None</Style>
+                  </Border>
+                </Style>
+              </Textbox>
+            </ReportItems>
+            <KeepTogether>true</KeepTogether>
+            <Top>1.73857in</Top>
+            <Left>5.4571in</Left>
+            <Height>0.2899in</Height>
+            <Width>1.77415in</Width>
+            <ZIndex>26</ZIndex>
+            <Style>
+              <Border>
+                <Color>Gray</Color>
+                <Style>Solid</Style>
+              </Border>
+              <TopBorder>
+                <Width>1pt</Width>
+              </TopBorder>
+              <BottomBorder>
+                <Width>1pt</Width>
+              </BottomBorder>
+            </Style>
+          </Rectangle>
+          <Rectangle Name="Rectangle32">
+            <ReportItems>
+              <Textbox Name="LabelCustomerName4">
+                <CanGrow>true</CanGrow>
+                <KeepTogether>true</KeepTogether>
+                <Paragraphs>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value>MODEL</Value>
+                        <Style>
+                          <FontFamily>Calibri</FontFamily>
+                          <FontWeight>Bold</FontWeight>
+                        </Style>
+                      </TextRun>
+                    </TextRuns>
+                    <Style />
+                  </Paragraph>
+                </Paragraphs>
+                <Top>0.05556in</Top>
+                <Left>0.0556in</Left>
+                <Height>0.16426in</Height>
+                <Width>0.51404in</Width>
+                <Style>
+                  <Border>
+                    <Style>None</Style>
+                  </Border>
+                </Style>
+              </Textbox>
+            </ReportItems>
+            <KeepTogether>true</KeepTogether>
+            <Top>2.02848in</Top>
+            <Left>0.72218in</Left>
+            <Height>0.28296in</Height>
+            <Width>1.28915in</Width>
+            <ZIndex>27</ZIndex>
+            <Style>
+              <Border>
+                <Color>Gray</Color>
+                <Style>Solid</Style>
+              </Border>
+              <TopBorder>
+                <Width>1pt</Width>
+              </TopBorder>
+              <BottomBorder>
+                <Width>1pt</Width>
+              </BottomBorder>
+              <RightBorder>
+                <Style>None</Style>
+              </RightBorder>
+            </Style>
+          </Rectangle>
+          <Rectangle Name="Rectangle33">
+            <ReportItems>
+              <Textbox Name="Model">
+                <CanGrow>true</CanGrow>
+                <KeepTogether>true</KeepTogether>
+                <Paragraphs>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value>=Parameters!Model.Value</Value>
+                        <Style />
+                      </TextRun>
+                    </TextRuns>
+                    <Style />
+                  </Paragraph>
+                </Paragraphs>
+                <rd:DefaultName>Model</rd:DefaultName>
+                <Top>0.05556in</Top>
+                <Left>0.05556in</Left>
+                <Height>0.16426in</Height>
+                <Width>1.82084in</Width>
+                <Style>
+                  <Border>
+                    <Style>None</Style>
+                  </Border>
+                </Style>
+              </Textbox>
+            </ReportItems>
+            <KeepTogether>true</KeepTogether>
+            <Top>2.02848in</Top>
+            <Left>2.01133in</Left>
+            <Height>0.28296in</Height>
+            <Width>2.04857in</Width>
+            <ZIndex>28</ZIndex>
+            <Style>
+              <Border>
+                <Color>Gray</Color>
+                <Style>Solid</Style>
+              </Border>
+              <TopBorder>
+                <Width>1pt</Width>
+              </TopBorder>
+              <BottomBorder>
+                <Width>1pt</Width>
+              </BottomBorder>
+            </Style>
+          </Rectangle>
+          <Rectangle Name="Rectangle34">
+            <ReportItems>
+              <Textbox Name="LabelCustomerName6">
+                <CanGrow>true</CanGrow>
+                <KeepTogether>true</KeepTogether>
+                <Paragraphs>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value>COUNTRY OF ORIGIN</Value>
+                        <Style>
+                          <FontFamily>Calibri</FontFamily>
+                          <FontWeight>Bold</FontWeight>
+                        </Style>
+                      </TextRun>
+                    </TextRuns>
+                    <Style />
+                  </Paragraph>
+                </Paragraphs>
+                <Top>0.05556in</Top>
+                <Left>0.06945in</Left>
+                <Height>0.16426in</Height>
+                <Width>1.24876in</Width>
+                <Style>
+                  <Border>
+                    <Style>None</Style>
+                  </Border>
+                </Style>
+              </Textbox>
+            </ReportItems>
+            <KeepTogether>true</KeepTogether>
+            <Top>2.02848in</Top>
+            <Left>4.0599in</Left>
+            <Height>0.28296in</Height>
+            <Width>1.3972in</Width>
+            <ZIndex>29</ZIndex>
+            <Style>
+              <Border>
+                <Color>Gray</Color>
+                <Style>Solid</Style>
+              </Border>
+              <TopBorder>
+                <Width>1pt</Width>
+              </TopBorder>
+              <BottomBorder>
+                <Width>1pt</Width>
+              </BottomBorder>
+            </Style>
+          </Rectangle>
+          <Rectangle Name="Rectangle35">
+            <ReportItems>
+              <Textbox Name="CountryOfOrigin">
+                <CanGrow>true</CanGrow>
+                <KeepTogether>true</KeepTogether>
+                <Paragraphs>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value>=Parameters!CountryOfOrigin.Value</Value>
+                        <Style />
+                      </TextRun>
+                    </TextRuns>
+                    <Style />
+                  </Paragraph>
+                </Paragraphs>
+                <rd:DefaultName>CountryOfOrigin</rd:DefaultName>
+                <Top>0.04167in</Top>
+                <Left>0.08803in</Left>
+                <Height>0.19792in</Height>
+                <Width>1.56112in</Width>
+                <Style>
+                  <Border>
+                    <Style>None</Style>
+                  </Border>
+                </Style>
+              </Textbox>
+            </ReportItems>
+            <KeepTogether>true</KeepTogether>
+            <Top>2.02848in</Top>
+            <Left>5.4571in</Left>
+            <Height>0.28296in</Height>
+            <Width>1.77414in</Width>
+            <ZIndex>30</ZIndex>
+            <Style>
+              <Border>
+                <Color>Gray</Color>
+                <Style>Solid</Style>
+              </Border>
+              <TopBorder>
+                <Width>1pt</Width>
+              </TopBorder>
+              <BottomBorder>
+                <Width>1pt</Width>
+              </BottomBorder>
+            </Style>
+          </Rectangle>
+          <Rectangle Name="Rectangle36">
+            <ReportItems>
+              <Textbox Name="LabelCustomerName8">
+                <CanGrow>true</CanGrow>
+                <KeepTogether>true</KeepTogether>
+                <Paragraphs>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value>SERIAL #</Value>
+                        <Style>
+                          <FontStyle>Normal</FontStyle>
+                          <FontFamily>Calibri</FontFamily>
+                          <FontWeight>Bold</FontWeight>
+                          <TextDecoration>None</TextDecoration>
+                          <Color>#000000</Color>
+                        </Style>
+                      </TextRun>
+                    </TextRuns>
+                    <Style />
+                  </Paragraph>
+                </Paragraphs>
+                <Top>0.05694in</Top>
+                <Left>0.0556in</Left>
+                <Height>0.16426in</Height>
+                <Width>0.60292in</Width>
+                <Style>
+                  <Border>
+                    <Style>None</Style>
+                  </Border>
+                </Style>
+              </Textbox>
+            </ReportItems>
+            <KeepTogether>true</KeepTogether>
+            <Top>2.31144in</Top>
+            <Left>0.72218in</Left>
+            <Height>0.28296in</Height>
+            <Width>1.28915in</Width>
+            <ZIndex>31</ZIndex>
+            <Style>
+              <Border>
+                <Color>Gray</Color>
+                <Style>Solid</Style>
+              </Border>
+              <TopBorder>
+                <Width>1pt</Width>
+              </TopBorder>
+              <BottomBorder>
+                <Width>1pt</Width>
+              </BottomBorder>
+              <RightBorder>
+                <Style>None</Style>
+              </RightBorder>
+            </Style>
+          </Rectangle>
+          <Rectangle Name="Rectangle37">
+            <ReportItems>
+              <Textbox Name="SerialNumber">
+                <CanGrow>true</CanGrow>
+                <KeepTogether>true</KeepTogether>
+                <Paragraphs>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value>=Parameters!SerialNumber.Value</Value>
+                        <Style />
+                      </TextRun>
+                    </TextRuns>
+                    <Style />
+                  </Paragraph>
+                </Paragraphs>
+                <rd:DefaultName>SerialNumber</rd:DefaultName>
+                <Top>0.05694in</Top>
+                <Left>0.05556in</Left>
+                <Height>0.16426in</Height>
+                <Width>1.82084in</Width>
+                <Style>
+                  <Border>
+                    <Style>None</Style>
+                  </Border>
+                </Style>
+              </Textbox>
+            </ReportItems>
+            <KeepTogether>true</KeepTogether>
+            <Top>2.31144in</Top>
+            <Left>2.01133in</Left>
+            <Height>0.28296in</Height>
+            <Width>2.04857in</Width>
+            <ZIndex>32</ZIndex>
+            <Style>
+              <Border>
+                <Color>Gray</Color>
+                <Style>Solid</Style>
+              </Border>
+              <TopBorder>
+                <Width>1pt</Width>
+              </TopBorder>
+              <BottomBorder>
+                <Width>1pt</Width>
+              </BottomBorder>
+            </Style>
+          </Rectangle>
+          <Rectangle Name="Rectangle38">
+            <ReportItems>
+              <Textbox Name="LabelCustomerName7">
+                <CanGrow>true</CanGrow>
+                <KeepTogether>true</KeepTogether>
+                <Paragraphs>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value>SERVICE DATE</Value>
+                        <Style>
+                          <FontStyle>Normal</FontStyle>
+                          <FontFamily>Calibri</FontFamily>
+                          <FontWeight>Bold</FontWeight>
+                          <TextDecoration>None</TextDecoration>
+                          <Color>#000000</Color>
+                        </Style>
+                      </TextRun>
+                    </TextRuns>
+                    <Style />
+                  </Paragraph>
+                </Paragraphs>
+                <Top>0.05694in</Top>
+                <Left>0.06945in</Left>
+                <Height>0.16426in</Height>
+                <Width>0.98834in</Width>
+                <Style>
+                  <Border>
+                    <Style>None</Style>
+                  </Border>
+                </Style>
+              </Textbox>
+            </ReportItems>
+            <KeepTogether>true</KeepTogether>
+            <Top>2.31144in</Top>
+            <Left>4.0599in</Left>
+            <Height>0.28296in</Height>
+            <Width>1.3972in</Width>
+            <ZIndex>33</ZIndex>
+            <Style>
+              <Border>
+                <Color>Gray</Color>
+                <Style>Solid</Style>
+              </Border>
+              <TopBorder>
+                <Width>1pt</Width>
+              </TopBorder>
+              <BottomBorder>
+                <Width>1pt</Width>
+              </BottomBorder>
+            </Style>
+          </Rectangle>
+          <Rectangle Name="Rectangle39">
+            <ReportItems>
+              <Textbox Name="ServiceDate">
+                <CanGrow>true</CanGrow>
+                <KeepTogether>true</KeepTogether>
+                <Paragraphs>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value>=Parameters!ServiceDate.Value</Value>
+                        <Style />
+                      </TextRun>
+                    </TextRuns>
+                    <Style />
+                  </Paragraph>
+                </Paragraphs>
+                <rd:DefaultName>ServiceDate</rd:DefaultName>
+                <Top>0.05694in</Top>
+                <Left>0.06944in</Left>
+                <Height>0.16426in</Height>
+                <Width>1.5797in</Width>
+                <Style>
+                  <Border>
+                    <Style>None</Style>
+                  </Border>
+                </Style>
+              </Textbox>
+            </ReportItems>
+            <KeepTogether>true</KeepTogether>
+            <Top>2.31144in</Top>
+            <Left>5.4571in</Left>
+            <Height>0.28296in</Height>
+            <Width>1.77414in</Width>
+            <ZIndex>34</ZIndex>
+            <Style>
+              <Border>
+                <Color>Gray</Color>
+                <Style>Solid</Style>
+              </Border>
+              <TopBorder>
+                <Width>1pt</Width>
+              </TopBorder>
+              <BottomBorder>
+                <Width>1pt</Width>
+              </BottomBorder>
+            </Style>
+          </Rectangle>
+          <Rectangle Name="Rectangle25">
+            <ReportItems>
+              <Textbox Name="Textbox51">
+                <CanGrow>true</CanGrow>
+                <KeepTogether>true</KeepTogether>
+                <Paragraphs>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value>Date: </Value>
+                        <Style>
+                          <FontStyle>Normal</FontStyle>
+                          <FontFamily>Calibri</FontFamily>
+                          <FontWeight>Bold</FontWeight>
+                          <TextDecoration>None</TextDecoration>
+                          <Color>#000000</Color>
+                        </Style>
+                      </TextRun>
+                    </TextRuns>
+                    <Style />
+                  </Paragraph>
+                </Paragraphs>
+                <rd:DefaultName>Textbox45</rd:DefaultName>
+                <Top>0.0493in</Top>
+                <Left>0.09255in</Left>
+                <Height>0.14583in</Height>
+                <Width>0.47916in</Width>
+                <Style>
+                  <Border>
+                    <Style>None</Style>
+                  </Border>
+                </Style>
+              </Textbox>
+            </ReportItems>
+            <KeepTogether>true</KeepTogether>
+            <Top>7.27917in</Top>
+            <Left>0.72218in</Left>
+            <Height>0.25208in</Height>
+            <Width>6.48958in</Width>
+            <ZIndex>35</ZIndex>
+            <Style>
+              <Border>
+                <Color>Gray</Color>
+                <Style>Solid</Style>
+              </Border>
+              <TopBorder>
+                <Style>None</Style>
+              </TopBorder>
+            </Style>
+          </Rectangle>
         </ReportItems>
-        <Height>9.53in</Height>
+        <Height>9.12375in</Height>
         <Style>
           <Border>
             <Style>None</Style>
@@ -1880,7 +1839,7 @@
       <Width>7.86109in</Width>
       <Page>
         <PageHeader>
-          <Height>1in</Height>
+          <Height>0.72917in</Height>
           <PrintOnFirstPage>true</PrintOnFirstPage>
           <PrintOnLastPage>true</PrintOnLastPage>
           <ReportItems>
@@ -1888,7 +1847,7 @@
               <Source>Embedded</Source>
               <Value>medtechlogo</Value>
               <Sizing>FitProportional</Sizing>
-              <Top>0.30083in</Top>
+              <Top>0.18833in</Top>
               <Left>5.29514in</Left>
               <Height>0.36458in</Height>
               <Width>1.91667in</Width>
@@ -1906,7 +1865,7 @@
           </Style>
         </PageHeader>
         <PageFooter>
-          <Height>0.70833in</Height>
+          <Height>0.65625in</Height>
           <PrintOnFirstPage>true</PrintOnFirstPage>
           <PrintOnLastPage>true</PrintOnLastPage>
           <ReportItems>

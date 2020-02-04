@@ -34,6 +34,8 @@
             this.Customer = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBoxIssueHistory = new System.Windows.Forms.GroupBox();
             this.groupBoxSearchIssue = new System.Windows.Forms.GroupBox();
+            this.buttonViewReport = new System.Windows.Forms.Button();
+            this.buttonSearch = new System.Windows.Forms.Button();
             this.buttonGetDemoData = new System.Windows.Forms.Button();
             this.checkBoxSearchResolved = new System.Windows.Forms.CheckBox();
             this.comboBoxSearchCustomer = new System.Windows.Forms.ComboBox();
@@ -56,7 +58,6 @@
             this.labelAnalyser = new System.Windows.Forms.Label();
             this.labelIssueDate = new System.Windows.Forms.Label();
             this.labelCustomerName = new System.Windows.Forms.Label();
-            this.buttonSearch = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewHistory)).BeginInit();
             this.groupBoxIssueHistory.SuspendLayout();
             this.groupBoxSearchIssue.SuspendLayout();
@@ -131,6 +132,7 @@
             // 
             this.groupBoxSearchIssue.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBoxSearchIssue.Controls.Add(this.buttonViewReport);
             this.groupBoxSearchIssue.Controls.Add(this.buttonSearch);
             this.groupBoxSearchIssue.Controls.Add(this.buttonGetDemoData);
             this.groupBoxSearchIssue.Controls.Add(this.checkBoxSearchResolved);
@@ -150,6 +152,28 @@
             this.groupBoxSearchIssue.TabIndex = 3;
             this.groupBoxSearchIssue.TabStop = false;
             this.groupBoxSearchIssue.Text = "Search Issues";
+            // 
+            // buttonViewReport
+            // 
+            this.buttonViewReport.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonViewReport.Location = new System.Drawing.Point(768, 14);
+            this.buttonViewReport.Name = "buttonViewReport";
+            this.buttonViewReport.Size = new System.Drawing.Size(99, 23);
+            this.buttonViewReport.TabIndex = 12;
+            this.buttonViewReport.Text = "View Report";
+            this.buttonViewReport.UseVisualStyleBackColor = true;
+            this.buttonViewReport.Click += new System.EventHandler(this.buttonViewReport_Click);
+            // 
+            // buttonSearch
+            // 
+            this.buttonSearch.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonSearch.Location = new System.Drawing.Point(663, 41);
+            this.buttonSearch.Name = "buttonSearch";
+            this.buttonSearch.Size = new System.Drawing.Size(99, 23);
+            this.buttonSearch.TabIndex = 11;
+            this.buttonSearch.Text = "Search";
+            this.buttonSearch.UseVisualStyleBackColor = true;
+            this.buttonSearch.Click += new System.EventHandler(this.buttonSearch_Click);
             // 
             // buttonGetDemoData
             // 
@@ -387,17 +411,6 @@
             this.labelCustomerName.Tag = "";
             this.labelCustomerName.Text = "Customer Name";
             // 
-            // buttonSearch
-            // 
-            this.buttonSearch.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonSearch.Location = new System.Drawing.Point(663, 41);
-            this.buttonSearch.Name = "buttonSearch";
-            this.buttonSearch.Size = new System.Drawing.Size(99, 23);
-            this.buttonSearch.TabIndex = 11;
-            this.buttonSearch.Text = "Search";
-            this.buttonSearch.UseVisualStyleBackColor = true;
-            this.buttonSearch.Click += new System.EventHandler(this.buttonSearch_Click);
-            // 
             // HistoryView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
@@ -458,5 +471,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Customer;
         private System.Windows.Forms.DataGridView dataGridViewErrorData;
         private System.Windows.Forms.Button buttonSearch;
+        private System.Windows.Forms.Button buttonViewReport;
     }
 }
