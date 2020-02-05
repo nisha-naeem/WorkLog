@@ -23,12 +23,12 @@ namespace Demo.Views
 
         private void ReportView_Load(object sender, EventArgs e)
         {
-            var pageSetup = reportViewer1.GetPageSettings();
+            var pageSetup = reportViewer.GetPageSettings();
             pageSetup.Margins = new System.Drawing.Printing.Margins(0, 0, 0, 0);
-            reportViewer1.SetPageSettings(pageSetup);
+            reportViewer.SetPageSettings(pageSetup);
 
-            this.reportViewer1.LocalReport.SetParameters(_parameters);
-            this.reportViewer1.RefreshReport();
+            this.reportViewer.LocalReport.SetParameters(_parameters);
+            this.reportViewer.RefreshReport();
         }
     }
 }
