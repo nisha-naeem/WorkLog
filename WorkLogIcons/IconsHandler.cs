@@ -29,6 +29,9 @@ namespace WorkLogIcons
                     return ConvertBase46ToPng(icons.Error);
                 case IconNames.Search:
                     return ConvertBase46ToPng(icons.Search);
+                case IconNames.Logout:
+                    return ConvertBase46ToPng(icons.Logout);
+
                 default:
                     break;
             }
@@ -54,7 +57,8 @@ namespace WorkLogIcons
         Manufacturer,
         Institution,
         Error,
-        Search
+        Search,
+        Logout
     }
 
     public class Icons
@@ -66,6 +70,7 @@ namespace WorkLogIcons
         private string _manufacturer16px = @"iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAABdElEQVQ4EZVRPUsDQRB9c3cmBnNJxEAUxFps/QX6K8RKEKxtrQQF7SwstPcjCZImja2NWlkJgq3YKIIIihpzyfjWi8muhMgd83hz87VvdgVI8I2e5NFsXUMwBegZXhfnvQTtQBTNxM2mS+aA03SyAepNmNYusm+5ZAOg7gCvWQi60wY5xXqIxkuK8ktQq1C8vKsgLE8jrNaQrS78lIXlInKVDTTe74ChFai4CiLkYwWZo0kEwTpvdokI4OkNwsoOADZhhEwTYW6cTs9EC8LCLUZWiQwxyM4BYY3OWkXLZoU1BpjAIfmJ4EHYJUdEAyJ7ZGNpJv4ogH0Hus8THkwlRDfJHCAfaEbb9NkLn1wiLFP7FaTGqmKclStymv8p+P4Ffc7GGDkgetZ2FFgrQOIVFJ98ut8VXPlmjIizQp3HPJs40D4gt7j/F6LWMX1jVGTIhjgrXFJyJyvxZUKHEfj3nWAfatsK+uT/C2ms4JZ1KSK5CR6/AQX6WomfyqfrAAAAAElFTkSuQmCC";
         private string _institution16px = @"iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAACDElEQVQ4EY1SPWsUURQ9d+bt7sxElGzjPzCFlRII2inYiBLBj8JCCIoR0VJQEDI7IAYsbAKaImBj41Y2Fgo2QaysgqgQEPwilWH92MnsfFzP22RwshPB5d537ztzzt1373sC7PzzG9EUVBcB+SxZMdtH+G0nplMHQ883nXmKl+mvAPXVyFvPjS7UuSxfBT3TOSKKJQgSiM4009aHHtq/fHftFLGHArzRTC/FCD+VOmczuTfmueEiCc9JfBJnwSRrTw3M4CPF7wrRnpPpfgX6YmQlaESXeTLSyQoa4WSh8oj/PKaiFx3BD1Vh7zi4WXxrFXSd1FzXRnZGFfOUvpTMveKQ/JS9Lse5f4glp7l/Tcl2MQEozhYme89TmMLVA4R2s9h9agDPhEcF8oDgPnppX9iOLcbT4iRBjz40il7krl5NknBVfLdzmsQuvxDnWhqPHKdz5+yWt7LGuJdetRiZO+GIgzbR7WIC/2F+0dJg6xb+0jnME82s2Y7TYKZEvaw1YTEB7pRYGU2ZlJFX9rOHW+vl3sZ13OzZ6CHaEE7T5qXXCohglj0f51WtbORzjy3RM9FtCndxmoftvuq1AlA5bwmcTRc5hgUovkZsdIiEgHqBIcxF0dyDu+PMMMCgNiuLWzeFYpXDsfmoT/Mpfx8FK/vfSZJ/HWrZ8w0mx/g8GSqUf6QFNOUTXujn4bM/SWGxXbQVNaQAAAAASUVORK5CYII=";
         private string _error16px = @"iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAABoUlEQVQ4EZVSPUscURQ9d+7bWfyARC0EQVT8SPyIpSAomjpWYrNa2otFIF32KcEiEDtBsbHPn7CwsBQsbew0pBRB3DfzPDu7M87irLCXc/bdr3f2vvcGeMdsGM7/AobfaUHQrrinWpE4voqMuabQ53Z9hQIHwABEjrhJyA8UOvVA3WfYikKBmmqVbX1kiqV91fU0yK9vVG25PCVRdM0mLyK7sffjbPrO+MY7N2eBZ+TszQRBFP1hPSQvf9Zqx3DuB/2InAyM2eHaghYBXtw3D6wlHSJjyQoMcVUSrFVtI0ZqmYAFDC/uN1LzftgC3TBmAq/WK6oWOcsEmuPN5GqCMJzgPXzK5fgWsm1LpYU0l4xmgX4EwV8AXWQGPp8TYJGJSTKFMDd1HsdnoDUmUN2j30/m4Xikf3yF+3yy6a9Y1Y26L/thOOv5xTEwZB4XVeeWT4DSvTFPLDT+jE4C7299FE3rahDUv7gvSbL1Z/Cr6uODyCbvITtz1iLyMVC9M/B+FMVWZu2Qm4urzPJ4I4YqFY6yxTfuZq4T/O9x7riTDYW9L1FOZ8uu8IrtAAAAAElFTkSuQmCC";
+        private string _logout = @"iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAYAAACpSkzOAAAABmJLR0QA/wD/AP+gvaeTAAAD3klEQVRIDa1VTWhcVRQ+584kb2bSZF7UIlHiDypoqGARV+4FXRjjD678QZAiFGR+koql0Cgo2sxUF4K6KCKitNqmoht33bkSdFFcqOBPrT+JmZnazpvnzLun37kzeZmkb4ZofJxz73fOufd89+/dy0TDv2tyR6cikjkimbVE0yy0W3sI04qx9DMZ+jTN0fLKpYXf1T9IeVBgwqvemjLyihA9gjYGOkwsEp2MLL94ISx+n9QQ8SvdfnbpYSJ+H5ExaAj9GDNaFkl9TV6rBpsozEwS271IgNnSo/B50IvE8kS9WT4NvEnQbpNNICmApAIvYvwJCc/XW4UfaciXzxy5mTm1hMFggIQVlmI9KL/Z3wXJNkw/V50lkVPwYMWktLUx/EOlN8gjaMTMNFtrlj4HdhITXZ2tXo9N/xbecShISlXU/1ry2eo8k7yOjo00mztWm4XfgHFmtIRGbF9GpSSn68F/I0F/agQFLCHpTPKRtYvqUzVa+JmlG7EXTwL/IzYqo96BsFgbFZGgjV/gmauylWng3oyYZ2GkhORUI1z4AXhHciFc+I6J9OSlQPagJnMzEqH71cBp02AX7rhkl8taekBTOSIckVvUEMtfaf1/aMcal8uwuNzpblKZ0toLvaHXyORY9U6x8gXaGkNmbi0ofAmcKF4Ynu9k0yTE12kDNyP8NI5whaK2Ogcpdvk2xKag11qR21EPlAyNdHpBl9sRMfGqOv1MpEkUJquwHwfYTsQ4AfztddxMEPoT2jt1RN+oIWzv1nqgsuTjmJjxGCcAY9L39Nwut5sRjvUZwocjOYdqsDDHRMwylAhL+1Q3kZwhfI4oRXQcOII+5meO3kSDPqGYyBINJNInBnfdfUjTwVulubtLtxaUfiGm94hoFFf/B0QnwA1ri+DRG1t3IVF2HW+u3xkxRj6EDyebj602D5wH7hI5IJ3DRNSA3utnzh1EfYXgddsgEkok8nMXD6Gj7k/dML0E7MS4EsVacOAcbt3nAHH0ZRG38Kt4X7Bt8PQERkwktJVIeDJbeQ0/jhLhsuF9fwXFX3tdN2akjlpQ/gjJnwfG4OUFvE93AW8IUy42eDNRPvfGXpAvIG5x0+xvBMUTwLFgkDGOgZ9begi3+TEvsNN/0PwlP1c5i5HOxA36gdDZequ0Zze9taudbf3EzE/XmsXP+psojpdOjXXVN3/ERDPBRMpTnwgvap2kuJ1dLJwIR9smNZNEov1Yi+3oZKbyLpI+299WRN5utMq6r/3uRJw4o6SWtda0Jlzui51stG7Y32cPhdueUTfL4VE/O34cWOrBrseJ9rWBtyWXARX3O21eeMj5AAAAAElFTkSuQmCC";
         public string Back { get => _back16px; }
         public string Save { get => _save16px; }
         public string Analyser { get => _analyser16px; }
@@ -73,6 +78,8 @@ namespace WorkLogIcons
         public string Institution { get => _institution16px; }
         public string Error { get => _error16px; }
         public string Search { get => _search; }
+
+        public string Logout { get => _logout; }
 
     }
 

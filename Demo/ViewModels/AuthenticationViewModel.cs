@@ -15,6 +15,7 @@ namespace Demo.ViewModels
         private string _username;
         private string _password;
         private string demoGoodhash = "SHA512:88:h6pvTFtO/T3jX6+y8hcooFyKPoJqCPjJ0A==:Pz1TipWOZYTRDOzTXtiPaFIQC1+m6TlzubVsx2bXEJrGTZuAx1CScW7rH0zuFqIkQV8rXGGT/tbCc7TcG6REvQ==";
+        
         public AuthenticationViewModel()
         {
 
@@ -77,7 +78,9 @@ namespace Demo.ViewModels
         private User GetUser(string username)
         {
             //call API to get user
+            if (this._username == "admin")
             return new User() { Hash = this.demoGoodhash };
+            else return new User() { Hash = "SHA512:88:h6pvTFtO/T3jX6+y8hcooFyKPoJqCPjJ0A==:Pz1TipWOyYTRDOzTXtiPaFIQC1+m6TlzubVsx2bXEJrGTZuAx1CScW7rH0zuFqIkQV8rXGGT/tbCc7TcG6REvQ==" };
         }
     }
 }

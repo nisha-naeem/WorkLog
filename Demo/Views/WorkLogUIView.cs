@@ -82,5 +82,17 @@ namespace Demo
 
             return IsOpen;
         }
+
+        private void toolStripLogout_Click(object sender, EventArgs e)
+        {
+            if (ActiveMdiChild != null)
+            {
+                foreach (Form form in this.MdiChildren)
+                {  
+                    ActiveMdiChild.Dispose();
+                }
+            }
+            ShowAuthenticationView();
+        }
     }
 }

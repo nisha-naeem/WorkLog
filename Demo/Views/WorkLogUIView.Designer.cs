@@ -32,6 +32,7 @@
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.toolStripButtonNewIssue = new System.Windows.Forms.ToolStripButton();
             this.toolStripButtonHistory = new System.Windows.Forms.ToolStripButton();
+            this.toolStripLogout = new System.Windows.Forms.ToolStripButton();
             this.toolStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -39,7 +40,8 @@
             // 
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripButtonNewIssue,
-            this.toolStripButtonHistory});
+            this.toolStripButtonHistory,
+            this.toolStripLogout});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
             this.toolStrip1.Size = new System.Drawing.Size(800, 25);
@@ -66,6 +68,16 @@
             this.toolStripButtonHistory.Text = "History";
             this.toolStripButtonHistory.Click += new System.EventHandler(this.ToolStripButtonHistory_Click);
             // 
+            // toolStripLogout
+            // 
+            this.toolStripLogout.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripLogout.Image = ((System.Drawing.Image)(resources.GetObject("toolStripLogout.Image")));
+            this.toolStripLogout.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripLogout.Name = "toolStripLogout";
+            this.toolStripLogout.Size = new System.Drawing.Size(23, 22);
+            this.toolStripLogout.Text = "toolStripButton1";
+            this.toolStripLogout.Click += new System.EventHandler(this.toolStripLogout_Click);
+            // 
             // WorkLogUIView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -89,6 +101,7 @@
         private System.Windows.Forms.ToolStrip toolStrip1;
         private System.Windows.Forms.ToolStripButton toolStripButtonNewIssue;
         private System.Windows.Forms.ToolStripButton toolStripButtonHistory;
+        private System.Windows.Forms.ToolStripButton toolStripLogout;
     }
 }
 
