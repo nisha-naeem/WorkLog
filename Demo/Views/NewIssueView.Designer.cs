@@ -38,7 +38,6 @@
             this.buttonAdd = new System.Windows.Forms.Button();
             this.dateTimePickerIssueDate = new System.Windows.Forms.DateTimePicker();
             this.label3 = new System.Windows.Forms.Label();
-            this.comboBoxErrorData = new System.Windows.Forms.ComboBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.comboBoxAnalyser = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -58,6 +57,8 @@
             this.dataGridViewResolvingSteps = new System.Windows.Forms.DataGridView();
             this.No = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Step = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.listBoxErrorData = new System.Windows.Forms.ListBox();
+            this.textBoxErrorData = new System.Windows.Forms.TextBox();
             this.toolStrip1.SuspendLayout();
             this.panelDataEntry.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -101,11 +102,12 @@
             // 
             // panelDataEntry
             // 
+            this.panelDataEntry.Controls.Add(this.textBoxErrorData);
+            this.panelDataEntry.Controls.Add(this.listBoxErrorData);
             this.panelDataEntry.Controls.Add(this.pictureBox1);
             this.panelDataEntry.Controls.Add(this.buttonAdd);
             this.panelDataEntry.Controls.Add(this.dateTimePickerIssueDate);
             this.panelDataEntry.Controls.Add(this.label3);
-            this.panelDataEntry.Controls.Add(this.comboBoxErrorData);
             this.panelDataEntry.Controls.Add(this.groupBox2);
             this.panelDataEntry.Controls.Add(this.textBoxIssueDescription);
             this.panelDataEntry.Controls.Add(this.comboBoxCustomer);
@@ -157,18 +159,6 @@
             this.label3.Size = new System.Drawing.Size(61, 14);
             this.label3.TabIndex = 29;
             this.label3.Text = "Issue Date";
-            // 
-            // comboBoxErrorData
-            // 
-            this.comboBoxErrorData.FormattingEnabled = true;
-            this.comboBoxErrorData.Items.AddRange(new object[] {
-            "CP3000",
-            "SAP 1"});
-            this.comboBoxErrorData.Location = new System.Drawing.Point(370, 64);
-            this.comboBoxErrorData.Name = "comboBoxErrorData";
-            this.comboBoxErrorData.Size = new System.Drawing.Size(275, 22);
-            this.comboBoxErrorData.TabIndex = 26;
-            this.comboBoxErrorData.Text = "Please select the error message(s)";
             // 
             // groupBox2
             // 
@@ -358,6 +348,22 @@
             this.Step.HeaderText = "Step to Resolve";
             this.Step.Name = "Step";
             // 
+            // listBoxErrorData
+            // 
+            this.listBoxErrorData.FormattingEnabled = true;
+            this.listBoxErrorData.ItemHeight = 14;
+            this.listBoxErrorData.Location = new System.Drawing.Point(370, 85);
+            this.listBoxErrorData.Name = "listBoxErrorData";
+            this.listBoxErrorData.Size = new System.Drawing.Size(275, 60);
+            this.listBoxErrorData.TabIndex = 32;
+            // 
+            // textBoxErrorData
+            // 
+            this.textBoxErrorData.Location = new System.Drawing.Point(370, 64);
+            this.textBoxErrorData.Name = "textBoxErrorData";
+            this.textBoxErrorData.Size = new System.Drawing.Size(275, 22);
+            this.textBoxErrorData.TabIndex = 33;
+            // 
             // NewIssueView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
@@ -398,7 +404,6 @@
         private System.Windows.Forms.Button buttonAdd;
         private System.Windows.Forms.DateTimePicker dateTimePickerIssueDate;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.ComboBox comboBoxErrorData;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.ComboBox comboBoxAnalyser;
         private System.Windows.Forms.Label label2;
@@ -419,5 +424,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn ErrorCode;
         private System.Windows.Forms.DataGridViewTextBoxColumn Message;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.ListBox listBoxErrorData;
+        private System.Windows.Forms.TextBox textBoxErrorData;
     }
 }

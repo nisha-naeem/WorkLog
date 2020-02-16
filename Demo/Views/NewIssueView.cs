@@ -56,9 +56,8 @@ namespace Demo
             textBoxIssueDescription.DataBindings.Add("Text", _issueData, nameof(_issueData.IssueDescription));
 
             //Bind ErrorData (Dropdown Box)
-            comboBoxErrorData.DataSource = _issueData.ErrorData;
-            comboBoxErrorData.DisplayMember = nameof(ErrorDataModel.Message);
-            comboBoxErrorData.ValueMember = nameof(ErrorDataModel.Id);
+            listBoxErrorData.DataSource = _issueData.ErrorData;
+
 
             //Bind ErrorMessageDisplay (Table)
             dataGridViewErrorMessageDisplay.DataSource = _issueData.ErrorMessages;
@@ -74,9 +73,9 @@ namespace Demo
 
         private void ButtonAdd_Click(object sender, EventArgs e)
         {
-            var SelectedError = (ErrorDataModel)comboBoxErrorData.SelectedItem;
+            //var SelectedError = (ErrorDataModel)comboBoxErrorData.SelectedItem;
 
-            _issueData.ErrorMessages.Add(new ErrorMessageDisplay() { ErrorCode = SelectedError.Code, Message = SelectedError.Message });
+           // _issueData.ErrorMessages.Add(new ErrorMessageDisplay() { ErrorCode = SelectedError.Code, Message = SelectedError.Message });
         }
 
         private void ToolStripButtonIssueResolveSteps_Click(object sender, EventArgs e)
