@@ -35,28 +35,28 @@ namespace Demo
         private void InitializeBinding()
         {
             //Binding Customer
-            comboBoxCustomer.DataSource = _issueData.Customers;
-            comboBoxCustomer.DisplayMember = nameof(CustomerModel.Name);
-            comboBoxCustomer.ValueMember = nameof(CustomerModel.Id);
+            sfComboBoxCustomer.DataSource = _issueData.Customers;
+            sfComboBoxCustomer.DisplayMember = nameof(CustomerModel.Name);
+            sfComboBoxCustomer.ValueMember = nameof(CustomerModel.Id);
 
             //Bind Issue Date
             dateTimePickerIssueDate.DataBindings.Add("Value", _issueData, nameof(_issueData.IssueDate));
 
             //Bind Analyser 
-            comboBoxAnalyser.DataSource = _issueData.Analysers;
-            comboBoxAnalyser.DisplayMember = nameof(AnalyserModel.Name);
-            comboBoxAnalyser.ValueMember = nameof(AnalyserModel.Id);
+            sfComboBoxAnalyser.DataSource = _issueData.Analysers;
+            sfComboBoxAnalyser.DisplayMember = nameof(AnalyserModel.Name);
+            sfComboBoxAnalyser.ValueMember = nameof(AnalyserModel.Id);
 
             //Bind Serial
-            comboBoxSerial.DataSource = _issueData.Serials;
-            comboBoxSerial.DisplayMember = nameof(SerialModel.SerialNo);
-            comboBoxSerial.ValueMember = nameof(SerialModel.Id);
+            sfComboBoxSerial.DataSource = _issueData.Serials;
+            sfComboBoxSerial.DisplayMember = nameof(SerialModel.SerialNo);
+            sfComboBoxSerial.ValueMember = nameof(SerialModel.Id);
 
             //Bind Issue description
             textBoxIssueDescription.DataBindings.Add("Text", _issueData, nameof(_issueData.IssueDescription));
 
             //Bind ErrorData (Dropdown Box)
-            listBoxErrorData.DataSource = _issueData.ErrorData;
+            sfComboBoxSelectErrorData.DataSource = _issueData.ErrorData;
 
 
             //Bind ErrorMessageDisplay (Table)

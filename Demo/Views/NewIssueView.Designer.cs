@@ -39,12 +39,9 @@
             this.dateTimePickerIssueDate = new System.Windows.Forms.DateTimePicker();
             this.label3 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.comboBoxAnalyser = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.comboBoxSerial = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
             this.textBoxIssueDescription = new System.Windows.Forms.TextBox();
-            this.comboBoxCustomer = new System.Windows.Forms.ComboBox();
             this.labelIssueDescription = new System.Windows.Forms.Label();
             this.checkBoxResolved = new System.Windows.Forms.CheckBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
@@ -57,8 +54,10 @@
             this.dataGridViewResolvingSteps = new System.Windows.Forms.DataGridView();
             this.No = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Step = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.listBoxErrorData = new System.Windows.Forms.ListBox();
-            this.textBoxErrorData = new System.Windows.Forms.TextBox();
+            this.sfComboBoxSelectErrorData = new Syncfusion.WinForms.ListView.SfComboBox();
+            this.sfComboBoxCustomer = new Syncfusion.WinForms.ListView.SfComboBox();
+            this.sfComboBoxAnalyser = new Syncfusion.WinForms.ListView.SfComboBox();
+            this.sfComboBoxSerial = new Syncfusion.WinForms.ListView.SfComboBox();
             this.toolStrip1.SuspendLayout();
             this.panelDataEntry.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -67,6 +66,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewErrorMessageDisplay)).BeginInit();
             this.panelResolvingSteps.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewResolvingSteps)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sfComboBoxSelectErrorData)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sfComboBoxCustomer)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sfComboBoxAnalyser)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sfComboBoxSerial)).BeginInit();
             this.SuspendLayout();
             // 
             // toolStrip1
@@ -102,15 +105,14 @@
             // 
             // panelDataEntry
             // 
-            this.panelDataEntry.Controls.Add(this.textBoxErrorData);
-            this.panelDataEntry.Controls.Add(this.listBoxErrorData);
+            this.panelDataEntry.Controls.Add(this.sfComboBoxCustomer);
+            this.panelDataEntry.Controls.Add(this.sfComboBoxSelectErrorData);
             this.panelDataEntry.Controls.Add(this.pictureBox1);
             this.panelDataEntry.Controls.Add(this.buttonAdd);
             this.panelDataEntry.Controls.Add(this.dateTimePickerIssueDate);
             this.panelDataEntry.Controls.Add(this.label3);
             this.panelDataEntry.Controls.Add(this.groupBox2);
             this.panelDataEntry.Controls.Add(this.textBoxIssueDescription);
-            this.panelDataEntry.Controls.Add(this.comboBoxCustomer);
             this.panelDataEntry.Controls.Add(this.labelIssueDescription);
             this.panelDataEntry.Controls.Add(this.checkBoxResolved);
             this.panelDataEntry.Controls.Add(this.groupBox1);
@@ -123,9 +125,9 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(650, 0);
+            this.pictureBox1.Location = new System.Drawing.Point(651, 0);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(75, 62);
+            this.pictureBox1.Size = new System.Drawing.Size(74, 54);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 31;
             this.pictureBox1.TabStop = false;
@@ -162,9 +164,9 @@
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.comboBoxAnalyser);
+            this.groupBox2.Controls.Add(this.sfComboBoxSerial);
+            this.groupBox2.Controls.Add(this.sfComboBoxAnalyser);
             this.groupBox2.Controls.Add(this.label2);
-            this.groupBox2.Controls.Add(this.comboBoxSerial);
             this.groupBox2.Controls.Add(this.label4);
             this.groupBox2.Location = new System.Drawing.Point(12, 91);
             this.groupBox2.Name = "groupBox2";
@@ -172,17 +174,6 @@
             this.groupBox2.TabIndex = 23;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Instrument Details";
-            // 
-            // comboBoxAnalyser
-            // 
-            this.comboBoxAnalyser.FormattingEnabled = true;
-            this.comboBoxAnalyser.Items.AddRange(new object[] {
-            "CP3000",
-            "SAP 1"});
-            this.comboBoxAnalyser.Location = new System.Drawing.Point(15, 38);
-            this.comboBoxAnalyser.Name = "comboBoxAnalyser";
-            this.comboBoxAnalyser.Size = new System.Drawing.Size(140, 22);
-            this.comboBoxAnalyser.TabIndex = 3;
             // 
             // label2
             // 
@@ -192,14 +183,6 @@
             this.label2.Size = new System.Drawing.Size(52, 14);
             this.label2.TabIndex = 1;
             this.label2.Text = "Analyser";
-            // 
-            // comboBoxSerial
-            // 
-            this.comboBoxSerial.FormattingEnabled = true;
-            this.comboBoxSerial.Location = new System.Drawing.Point(170, 38);
-            this.comboBoxSerial.Name = "comboBoxSerial";
-            this.comboBoxSerial.Size = new System.Drawing.Size(140, 22);
-            this.comboBoxSerial.TabIndex = 4;
             // 
             // label4
             // 
@@ -218,17 +201,6 @@
             this.textBoxIssueDescription.Name = "textBoxIssueDescription";
             this.textBoxIssueDescription.Size = new System.Drawing.Size(343, 86);
             this.textBoxIssueDescription.TabIndex = 24;
-            // 
-            // comboBoxCustomer
-            // 
-            this.comboBoxCustomer.FormattingEnabled = true;
-            this.comboBoxCustomer.Items.AddRange(new object[] {
-            "CP3000",
-            "SAP 1"});
-            this.comboBoxCustomer.Location = new System.Drawing.Point(79, 12);
-            this.comboBoxCustomer.Name = "comboBoxCustomer";
-            this.comboBoxCustomer.Size = new System.Drawing.Size(276, 22);
-            this.comboBoxCustomer.TabIndex = 21;
             // 
             // labelIssueDescription
             // 
@@ -348,21 +320,49 @@
             this.Step.HeaderText = "Step to Resolve";
             this.Step.Name = "Step";
             // 
-            // listBoxErrorData
+            // sfComboBoxSelectErrorData
             // 
-            this.listBoxErrorData.FormattingEnabled = true;
-            this.listBoxErrorData.ItemHeight = 14;
-            this.listBoxErrorData.Location = new System.Drawing.Point(370, 85);
-            this.listBoxErrorData.Name = "listBoxErrorData";
-            this.listBoxErrorData.Size = new System.Drawing.Size(275, 60);
-            this.listBoxErrorData.TabIndex = 32;
+            this.sfComboBoxSelectErrorData.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.sfComboBoxSelectErrorData.AutoCompleteSuggestMode = Syncfusion.WinForms.ListView.Enums.AutoCompleteSuggestMode.Contains;
+            this.sfComboBoxSelectErrorData.Location = new System.Drawing.Point(370, 62);
+            this.sfComboBoxSelectErrorData.Name = "sfComboBoxSelectErrorData";
+            this.sfComboBoxSelectErrorData.Size = new System.Drawing.Size(274, 25);
+            this.sfComboBoxSelectErrorData.Style.DropDownStyle.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(100)))), ((int)(((byte)(100)))));
+            this.sfComboBoxSelectErrorData.Style.TokenStyle.CloseButtonBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.sfComboBoxSelectErrorData.TabIndex = 32;
             // 
-            // textBoxErrorData
+            // sfComboBoxCustomer
             // 
-            this.textBoxErrorData.Location = new System.Drawing.Point(370, 64);
-            this.textBoxErrorData.Name = "textBoxErrorData";
-            this.textBoxErrorData.Size = new System.Drawing.Size(275, 22);
-            this.textBoxErrorData.TabIndex = 33;
+            this.sfComboBoxCustomer.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.sfComboBoxCustomer.AutoCompleteSuggestMode = Syncfusion.WinForms.ListView.Enums.AutoCompleteSuggestMode.Contains;
+            this.sfComboBoxCustomer.Location = new System.Drawing.Point(79, 11);
+            this.sfComboBoxCustomer.Name = "sfComboBoxCustomer";
+            this.sfComboBoxCustomer.Size = new System.Drawing.Size(274, 25);
+            this.sfComboBoxCustomer.Style.DropDownStyle.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(100)))), ((int)(((byte)(100)))));
+            this.sfComboBoxCustomer.Style.TokenStyle.CloseButtonBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.sfComboBoxCustomer.TabIndex = 33;
+            // 
+            // sfComboBoxAnalyser
+            // 
+            this.sfComboBoxAnalyser.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.sfComboBoxAnalyser.AutoCompleteSuggestMode = Syncfusion.WinForms.ListView.Enums.AutoCompleteSuggestMode.Contains;
+            this.sfComboBoxAnalyser.Location = new System.Drawing.Point(15, 38);
+            this.sfComboBoxAnalyser.Name = "sfComboBoxAnalyser";
+            this.sfComboBoxAnalyser.Size = new System.Drawing.Size(147, 22);
+            this.sfComboBoxAnalyser.Style.DropDownStyle.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(100)))), ((int)(((byte)(100)))));
+            this.sfComboBoxAnalyser.Style.TokenStyle.CloseButtonBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.sfComboBoxAnalyser.TabIndex = 33;
+            // 
+            // sfComboBoxSerial
+            // 
+            this.sfComboBoxSerial.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.sfComboBoxSerial.AutoCompleteSuggestMode = Syncfusion.WinForms.ListView.Enums.AutoCompleteSuggestMode.Contains;
+            this.sfComboBoxSerial.Location = new System.Drawing.Point(170, 37);
+            this.sfComboBoxSerial.Name = "sfComboBoxSerial";
+            this.sfComboBoxSerial.Size = new System.Drawing.Size(147, 22);
+            this.sfComboBoxSerial.Style.DropDownStyle.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(100)))), ((int)(((byte)(100)))));
+            this.sfComboBoxSerial.Style.TokenStyle.CloseButtonBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.sfComboBoxSerial.TabIndex = 34;
             // 
             // NewIssueView
             // 
@@ -391,6 +391,10 @@
             this.panelResolvingSteps.ResumeLayout(false);
             this.panelResolvingSteps.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewResolvingSteps)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sfComboBoxSelectErrorData)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sfComboBoxCustomer)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sfComboBoxAnalyser)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sfComboBoxSerial)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -405,12 +409,9 @@
         private System.Windows.Forms.DateTimePicker dateTimePickerIssueDate;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.ComboBox comboBoxAnalyser;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.ComboBox comboBoxSerial;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox textBoxIssueDescription;
-        private System.Windows.Forms.ComboBox comboBoxCustomer;
         private System.Windows.Forms.Label labelIssueDescription;
         private System.Windows.Forms.CheckBox checkBoxResolved;
         private System.Windows.Forms.GroupBox groupBox1;
@@ -424,7 +425,9 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn ErrorCode;
         private System.Windows.Forms.DataGridViewTextBoxColumn Message;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.ListBox listBoxErrorData;
-        private System.Windows.Forms.TextBox textBoxErrorData;
+        private Syncfusion.WinForms.ListView.SfComboBox sfComboBoxSelectErrorData;
+        private Syncfusion.WinForms.ListView.SfComboBox sfComboBoxCustomer;
+        private Syncfusion.WinForms.ListView.SfComboBox sfComboBoxSerial;
+        private Syncfusion.WinForms.ListView.SfComboBox sfComboBoxAnalyser;
     }
 }

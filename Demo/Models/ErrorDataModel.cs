@@ -8,7 +8,7 @@
 
         public override string ToString()
         {
-            return $"{this.Id}|{this.Code}|{this.Message}";
+            return $"{this.Code} | {this.Message}";
         }
     }
 

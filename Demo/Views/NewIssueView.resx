@@ -128,24 +128,24 @@
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
         YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHSSURBVEhL7ZW7TsMwFIYP15LaoRMql4kdFl6BlZdgASQE
-        CCHEwADvAAutoFLb2G0fgJUFIQQICQmxARKCFYn7ZSnHjnNx4qpJZz7pl2v7P78Tx0nhn3TYfAYIu8O2
+        CCHEwADvAEupoFLb2G0fgJUFIQQICQmxARKCFYn7ZSnHjnNx4qpJZz7pl2v7P78Tx0nhn3TYfAYIu8O2
         mUqUb6iENtjlB2NAEiVaxDMnJbyAUNtFPGNSwuGBttWsAc+UFD04UEvaGiKEQ8NqicnciVpiMrdU9UY+
-        1FxtCrKNYaD1ISDVSRhkSyrNgDEopi/UCkCjR1WlwBwYUvETCJ92zY1+oM483sU5ZPizFHXOsD8HsNfn
-        eqIYQ4UKP2CzNbkVAqs+hkGXZi+K8gvIVkakV8NkdrWuHEhpAPtXkfm4xAWIu9QwGYUIyysHetiq0eOJ
-        OmUglXu3z5ZVlSJq9iS2xEPsuT9X+dZ8Ni8ANLsgVx/HhT7weZ2qKoVuDkT5pnIAFr2r8Wuw2Ci2u66H
+        1FxtCrKNYaD1ISDVSRhkSyrNgDEopi/UCkCjR1WlwBwYUvETCJ92zY1+oM483sU5ZPizFHXOsD8HUOhz
+        PVGMoUKFH7DZmtwKgVUfw6BLsxdF+QVkKyPSq2Eyu1pXDqQ0gP2ryHxc4gLEXWqYjEKE5ZUDPWzV6PFE
+        nTKQyr3bZ8uqShE1exJb4iH23J+rfGs+m+8BNLsgVx/HhT7weZ2qKoVuDkT5pnIAFr2r8Wuw2Ci2u66H
         7chwOOrFK+dyzGKvqkrhBcb1C/kykZ5s6U2OUc4Atrql7Nps8JsX/TqLv8gaH9t59CejIrUJ6SH8JBhj
         JTdYgC3h+1qNzY7dOQ/xh2PzJ93km90HRtiiNi4XwW0h7EAbF6JsQdak4zCDxfoxJfxW6wsZj2lSOn7R
-        UhH6VMjjiop9KgD+AGPo2j6FTCoYAAAAAElFTkSuQmCC
+        UhH6VMjjiop9KgD+AF/k2j3Rc64ZAAAAAElFTkSuQmCC
 </value>
   </data>
   <data name="toolStripButtonIssueResolveSteps.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
         YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADfSURBVDhPYxgkgHdZPAPv8r1A+iAY8yw/gxdzLz/GwLfc
-        DaobCHiW7wJqPILAy/8TxstmQnUDgeBSGwaeFQEkYf7VhlDdQAB2ATZb8GFkFxBrAM/yBQy88/5A+NgM
+        DaobCHiW7wJqPILAy/8TxstmQnUDgeBSGwaeFQEkYf7VhlDdQAB2ATZb8GFkFxBrAM/yBQy8c/9A+NgM
         YFv+BhhA4UAnhoIx77ICqMaJQPY+IC6EG0aSC7gW32HgXeoFNPwLQpwsLyzdid8L7IveMvAsqwTyyyF4
         aTdU8QYGzmU3gHEfBTcMhwv+MrAvfwfHnMs/QhXvZuBZqQVkv4CqQzdg6TaEBNF4OlQ3EHAvcwKbSArm
-        WoaUkAYOMDAAAPUx+CQ7bevCAAAAAElFTkSuQmCC
+        WoaUkAYOMDAAAPFG+CLmeg9KAAAAAElFTkSuQmCC
 </value>
   </data>
   <data name="pictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
