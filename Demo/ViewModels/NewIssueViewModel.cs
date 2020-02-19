@@ -18,6 +18,7 @@ namespace Demo.ViewModels
 
         #region Events
         public event PropertyChangedEventHandler PropertyChanged;
+        
         #endregion
 
         #region Default Constructor
@@ -26,6 +27,7 @@ namespace Demo.ViewModels
             this.ErrorMessages = new BindingList<ErrorMessageDisplay>();
             this.PropertyChanged += NewIssueViewModel_PropertyChanged;
             LoadDemoData();
+            FilteredErrorData =new BindingList<ErrorDataModel>() { new ErrorDataModel()};
         }
 
         #endregion
@@ -35,13 +37,31 @@ namespace Demo.ViewModels
         private void NewIssueViewModel_PropertyChanged(object sender, PropertyChangedEventArgs e)
         {
             if (e.PropertyName == PropertyNames.SelectedSerial.ToString()) { UpdateSelectedAnalyser(this._selectedSerial); }
+            if (e.PropertyName == PropertyNames.SelectedAnalyser.ToString()) { FilterAvailableErrorsList(this._selectedAnalyser); }
+        }
+
+        private void FilterAvailableErrorsList(int selectedAnalyser)
+        {
+            Debug.WriteLine($"Detected Analyser change: Analyser {selectedAnalyser}");
+            FilteredErrorData.Clear();
+            IEnumerable<ErrorDataModel> FilterResults = ErrorData.Where(e => e.AnalyserId == selectedAnalyser);
+            Debug.WriteLine($"Filtered Results Count: {FilterResults.Count()}");
+
+
+            foreach (var item in FilterResults)
+            {
+                FilteredErrorData.Add(item);
+                Debug.WriteLine($"Match for Error Data, Message: {item.Message}");
+                Debug.WriteLine($"Match for Error Data, Analyser Code: {item.AnalyserId}");
+
+            }
         }
 
         private void UpdateSelectedAnalyser(string selectedSerial)
         {
             //The Analyser model will be null if there is no analyser match for the serial number
             AnalyserModel SelectedAnalyser = Analysers.SingleOrDefault(a => a.Serial == selectedSerial);
-            if (SelectedAnalyser != null) { this._selectedAnalyser = SelectedAnalyser.Id; }
+            if (SelectedAnalyser != null) { this.SelectedAnalyser = SelectedAnalyser.Id; }
         }
 
         private void LoadDemoData()
@@ -55,8 +75,9 @@ namespace Demo.ViewModels
             //load customer list
             this.ErrorData = new List<ErrorDataModel>()
                 {
-                    new ErrorDataModel() { Id = 1, Code = "A001", Message = "Test Error Message" },
-                    new ErrorDataModel() { Id = 2, Code = "A002", Message = "Another Error Message" }
+                    new ErrorDataModel() 
+                    { Id = 1, Code = "A001", Message = "This is CP3000 error", AnalyserId = 2 },
+                    new ErrorDataModel() { Id = 2, Code = "A002", Message = "This is a Sapphire error", AnalyserId =1 }
                 };
 
             //load customers
@@ -99,6 +120,7 @@ namespace Demo.ViewModels
         public DateTime IssueDate { get; set; }
         public string IssueDescription { get; set; }
         public List<ErrorDataModel> ErrorData { get; set; }
+        public BindingList<ErrorDataModel> FilteredErrorData { get; set; }
         public bool IsResolved { get; set; }
 
         public List<CustomerModel> Customers { get; set; }
@@ -152,7 +174,8 @@ namespace Demo.ViewModels
 
         private enum PropertyNames
         {
-            SelectedSerial
+            SelectedSerial,
+            SelectedAnalyser
         }
 
     }

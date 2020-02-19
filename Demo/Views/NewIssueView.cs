@@ -1,6 +1,7 @@
 ﻿using Demo.Models;
 using Demo.ViewModels;
 using System;
+using System.Diagnostics;
 using System.Drawing;
 using System.Windows.Forms;
 using WorkLogIcons;
@@ -27,10 +28,10 @@ namespace Demo
 
             //Data bind the controls
             InitializeBinding();
-
             DisplayDataEntryPage();
 
         }
+
 
         private void InitializeBinding()
         {
@@ -60,7 +61,7 @@ namespace Demo
             textBoxIssueDescription.DataBindings.Add("Text", _issueData, nameof(_issueData.IssueDescription));
 
             //Bind ErrorData (Dropdown Box)
-            sfComboBoxSelectErrorData.DataSource = _issueData.ErrorData;
+            sfComboBoxSelectErrorData.DataSource = _issueData.FilteredErrorData;
 
 
             //Bind ErrorMessageDisplay (Table)
@@ -167,6 +168,13 @@ namespace Demo
                 textBoxStep.Text = textBoxStep.Tag.ToString();
             }
             textBoxStep.ForeColor = Color.Gray;
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            sfComboBoxSelectErrorData.Refresh();
+            Debug.WriteLine("Clicked the image");
 
         }
     }

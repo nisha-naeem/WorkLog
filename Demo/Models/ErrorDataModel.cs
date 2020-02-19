@@ -5,6 +5,7 @@
         public int Id { get; set; }
         public string Code { get; set; }
         public string Message { get; set; }
+        public int AnalyserId { get; set; }
 
         public override string ToString()
         {
