@@ -73,9 +73,9 @@ namespace Demo
 
         private void ButtonAdd_Click(object sender, EventArgs e)
         {
-            //var SelectedError = (ErrorDataModel)comboBoxErrorData.SelectedItem;
+            var SelectedError = (ErrorDataModel)sfComboBoxSelectErrorData.SelectedItem;
 
-           // _issueData.ErrorMessages.Add(new ErrorMessageDisplay() { ErrorCode = SelectedError.Code, Message = SelectedError.Message });
+            _issueData.ErrorMessages.Add(new ErrorMessageDisplay() { ErrorCode = SelectedError.Code, Message = SelectedError.Message });
         }
 
         private void ToolStripButtonIssueResolveSteps_Click(object sender, EventArgs e)
