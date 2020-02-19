@@ -47,10 +47,14 @@ namespace Demo
             sfComboBoxAnalyser.DisplayMember = nameof(AnalyserModel.Name);
             sfComboBoxAnalyser.ValueMember = nameof(AnalyserModel.Id);
 
+            sfComboBoxAnalyser.DataBindings.Add("SelectedValue", _issueData, nameof(_issueData.SelectedAnalyser));
+
             //Bind Serial
             sfComboBoxSerial.DataSource = _issueData.Serials;
             sfComboBoxSerial.DisplayMember = nameof(SerialModel.SerialNo);
-            sfComboBoxSerial.ValueMember = nameof(SerialModel.Id);
+            //sfComboBoxSerial.ValueMember = nameof(SerialModel.Id);
+
+            sfComboBoxSerial.DataBindings.Add("SelectedValue", _issueData, nameof(_issueData.SelectedSerial));
 
             //Bind Issue description
             textBoxIssueDescription.DataBindings.Add("Text", _issueData, nameof(_issueData.IssueDescription));
@@ -69,7 +73,6 @@ namespace Demo
             dataGridViewResolvingSteps.DataSource = _issueData.resolvingStepsModels;
 
         }
-
 
         private void ButtonAdd_Click(object sender, EventArgs e)
         {
@@ -108,8 +111,6 @@ namespace Demo
                 this.uiState = UiState.ResolvingStepsEntry;
             }
         }
-
-
 
         private void ToolStripButtonSaveIssue_Click(object sender, EventArgs e)
         {
@@ -161,7 +162,7 @@ namespace Demo
 
         private void TextBoxStep_Leave(object sender, EventArgs e)
         {
-            if (textBoxStep.Text == "")
+            if (textBoxStep.Text.Length == 0)
             {
                 textBoxStep.Text = textBoxStep.Tag.ToString();
             }

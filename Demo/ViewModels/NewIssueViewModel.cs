@@ -2,25 +2,53 @@
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
-
+using System.Diagnostics;
+using System.Linq;
+using System.Runtime.CompilerServices;
 
 namespace Demo.ViewModels
 {
-    public class NewIssueViewModel
+    public class NewIssueViewModel : INotifyPropertyChanged
     {
+        #region Private Properties
+        private string _selectedSerial;
+        private int _selectedAnalyser;
+
+        #endregion
+
+        #region Events
+        public event PropertyChangedEventHandler PropertyChanged;
+        #endregion
+
+        #region Default Constructor
         public NewIssueViewModel()
         {
             this.ErrorMessages = new BindingList<ErrorMessageDisplay>();
+            this.PropertyChanged += NewIssueViewModel_PropertyChanged;
             LoadDemoData();
         }
 
+        #endregion
 
         #region PrivateMethods
+
+        private void NewIssueViewModel_PropertyChanged(object sender, PropertyChangedEventArgs e)
+        {
+            if (e.PropertyName == PropertyNames.SelectedSerial.ToString()) { UpdateSelectedAnalyser(this._selectedSerial); }
+        }
+
+        private void UpdateSelectedAnalyser(string selectedSerial)
+        {
+            //The Analyser model will be null if there is no analyser match for the serial number
+            AnalyserModel SelectedAnalyser = Analysers.SingleOrDefault(a => a.Serial == selectedSerial);
+            if (SelectedAnalyser != null) { this._selectedAnalyser = SelectedAnalyser.Id; }
+        }
+
         private void LoadDemoData()
         {
             //set date
             this.IssueDate = DateTime.Today;
-            
+
             //set issue description
             this.IssueDescription = "This is just a test issue. No worries!";
 
@@ -50,8 +78,8 @@ namespace Demo.ViewModels
             //Load Analysers
             this.Analysers = new List<AnalyserModel>()
                 {
-                    new AnalyserModel() { Id = 1, Name = "Sapphire" },
-                    new AnalyserModel() { Id = 2, Name = "CP3000" }
+                    new AnalyserModel() { Id = 1, Name = "Sapphire", Serial = "2653625ASJH" },
+                    new AnalyserModel() { Id = 2, Name = "CP3000" , Serial = "HHF3625ASJH"}
                 };
 
             //set demo resolving steps
@@ -67,7 +95,7 @@ namespace Demo.ViewModels
         }
         #endregion
 
-        #region Proprties
+        #region Public Proprties
         public DateTime IssueDate { get; set; }
         public string IssueDescription { get; set; }
         public List<ErrorDataModel> ErrorData { get; set; }
@@ -79,9 +107,37 @@ namespace Demo.ViewModels
         public BindingList<ErrorMessageDisplay> ErrorMessages { get; set; }
         public BindingList<ResolvingStepsModel> resolvingStepsModels { get; set; }
 
+        #region SelectedDataFromViews
+        public string SelectedSerial
+        {
+            get => _selectedSerial;
+            set
+            {
+                _selectedSerial = value;
+                Debug.WriteLine($"The Selected Serial is: {_selectedSerial}");
+                NotifyPropertyChanged();
+            }
+        }
+        public int SelectedAnalyser
+        {
+            get => _selectedAnalyser; set
+            {
+                _selectedAnalyser = value;
+                NotifyPropertyChanged();
+            }
+        }
+
+        #endregion
+
         #endregion
 
         #region PublicMethods
+
+        private void NotifyPropertyChanged([CallerMemberName] String propertyName = "")
+        {
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
+        }
+
         public void SaveIssue()
         {
             //save the issue
@@ -94,6 +150,10 @@ namespace Demo.ViewModels
 
         #endregion
 
+        private enum PropertyNames
+        {
+            SelectedSerial
+        }
 
     }
 
