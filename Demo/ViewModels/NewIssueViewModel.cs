@@ -41,6 +41,13 @@ namespace Demo.ViewModels
         {
             if (e.PropertyName == PropertyNames.SelectedSerial.ToString()) { UpdateSelectedAnalyser(this._selectedSerial); }
             if (e.PropertyName == PropertyNames.SelectedAnalyser.ToString()) { FilterAvailableErrorsList(this._selectedAnalyser); }
+
+            PushMessages(this, new PushMessageEventArgs()
+            {
+                Message = "This is a test message",
+                Title = "Title of the message",
+                Buttons = System.Windows.Forms.MessageBoxButtons.OK
+            });
         }
 
         private void FilterAvailableErrorsList(int selectedAnalyser)

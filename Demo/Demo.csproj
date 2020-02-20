@@ -76,7 +76,6 @@
     <Compile Include="Models\AnalyserModel.cs" />
     <Compile Include="Models\CustomerModel.cs" />
     <Compile Include="Models\IssueHistorySearchModel.cs" />
-    <Compile Include="Models\MessageButton.cs" />
     <Compile Include="Models\ResolvingStepsModel.cs" />
     <Compile Include="Models\User.cs" />
     <Compile Include="SqlServerTypes\Loader.cs" />

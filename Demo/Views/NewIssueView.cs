@@ -21,17 +21,28 @@ namespace Demo
 
         public Image GetIcon { get; private set; }
 
+       // [System.Diagnostics.CodeAnalysis.SuppressMessage("Design", "CA1062:Validate arguments of public methods", Justification = "<Pending>")]
         public NewIssueView(NewIssueViewModel newIssue)
         {
             InitializeComponent();
-            this._issueData = newIssue;
+            if (newIssue != null)
+            {
+                this._issueData = newIssue;
+                _issueData.PushMessages += _issueData_PushMessages;
+            }
 
             //Data bind the controls
             InitializeBinding();
             DisplayDataEntryPage();
 
+            //Subscribe for events
+
         }
 
+        private void _issueData_PushMessages(object sender, PushMessageEventArgs e)
+        {
+            MessageBox.Show(e.Message,e.Title,e.Buttons);
+        }
 
         private void InitializeBinding()
         {
