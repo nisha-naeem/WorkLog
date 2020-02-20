@@ -17,7 +17,10 @@ namespace Demo.ViewModels
         #endregion
 
         #region Events
+        public delegate void PushMessageEventHandler(object sender, PushMessageEventArgs e);
+       
         public event PropertyChangedEventHandler PropertyChanged;
+        public event PushMessageEventHandler PushMessages;
         
         #endregion
 

@@ -76,6 +76,7 @@
     <Compile Include="Models\AnalyserModel.cs" />
     <Compile Include="Models\CustomerModel.cs" />
     <Compile Include="Models\IssueHistorySearchModel.cs" />
+    <Compile Include="Models\MessageButton.cs" />
     <Compile Include="Models\ResolvingStepsModel.cs" />
     <Compile Include="Models\User.cs" />
     <Compile Include="SqlServerTypes\Loader.cs" />
@@ -86,6 +87,7 @@
     <Compile Include="Models\HistoryModel.cs" />
     <Compile Include="ViewModels\NewIssueViewModel.cs" />
     <Compile Include="Models\SerialModel.cs" />
+    <Compile Include="Models\PushMessageEventArgs.cs" />
     <Compile Include="Views\Authentication.cs">
       <SubType>Form</SubType>
     </Compile>
