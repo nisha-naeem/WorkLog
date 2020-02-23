@@ -17,7 +17,7 @@ namespace Demo.ViewModels
         #endregion
 
         #region Events
-        public delegate void PushMessageEventHandler(object sender, PushMessageEventArgs e);
+        public delegate void PushMessageEventHandler(string CallBackMemberName, PushMessageEventArgs e);
        
         public event PropertyChangedEventHandler PropertyChanged;
         public event PushMessageEventHandler PushMessages;
@@ -39,15 +39,14 @@ namespace Demo.ViewModels
 
         private void NewIssueViewModel_PropertyChanged(object sender, PropertyChangedEventArgs e)
         {
-            if (e.PropertyName == PropertyNames.SelectedSerial.ToString()) { UpdateSelectedAnalyser(this._selectedSerial); }
-            if (e.PropertyName == PropertyNames.SelectedAnalyser.ToString()) { FilterAvailableErrorsList(this._selectedAnalyser); }
+            if (e.PropertyName == PropertyNames.SelectedSerial.ToString()) 
+            { UpdateSelectedAnalyser(this._selectedSerial); }
 
-            PushMessages(this, new PushMessageEventArgs()
-            {
-                Message = "This is a test message",
-                Title = "Title of the message",
-                Buttons = System.Windows.Forms.MessageBoxButtons.OK
-            });
+            if (e.PropertyName == PropertyNames.SelectedAnalyser.ToString()) 
+            { FilterAvailableErrorsList(this._selectedAnalyser); }
+
+            PushMessages()
+
         }
 
         private void FilterAvailableErrorsList(int selectedAnalyser)
@@ -72,6 +71,8 @@ namespace Demo.ViewModels
             //The Analyser model will be null if there is no analyser match for the serial number
             AnalyserModel SelectedAnalyser = Analysers.SingleOrDefault(a => a.Serial == selectedSerial);
             if (SelectedAnalyser != null) { this.SelectedAnalyser = SelectedAnalyser.Id; }
+
+
         }
 
         private void LoadDemoData()

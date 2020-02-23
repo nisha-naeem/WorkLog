@@ -7,6 +7,4 @@
         public string Serial { get; set; }
     }
 
-
-
 }

@@ -39,7 +39,7 @@ namespace Demo
 
         }
 
-        private void _issueData_PushMessages(object sender, PushMessageEventArgs e)
+        private void _issueData_PushMessages(string CallBackMemberName, PushMessageEventArgs e)
         {
             MessageBox.Show(e.Message,e.Title,e.Buttons);
         }
